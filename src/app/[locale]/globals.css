@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --yellow-500: #f4ab0b;
+  }
+}
