@@ -1,25 +1,25 @@
-'use client'
-import React, { useState } from 'react';
-import Link from 'next/link';
-import NavLink from './NavLink';
-import { FaSearch } from 'react-icons/fa';
-import { FiGlobe } from 'react-icons/fi';
-import { HiMenu, HiX } from 'react-icons/hi';
-import Logo from '@public/assets/logo.svg';
-import { scrollToSection } from '@/lib/utils';
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+import NavLink from "./NavLink";
+import { FaSearch } from "react-icons/fa";
+import { FiGlobe } from "react-icons/fi";
+import { HiMenu, HiX } from "react-icons/hi";
+import Logo from "@public/assets/logo.svg";
+import { scrollToSection } from "@/lib/utils";
 
 const Header: React.FC = () => {  
-  const [active, setActive] = useState<string>('Home');
+  const [active, setActive] = useState<string>("Home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
   const navItems = [    
-    { label: 'Sobre Nos', href: '#about-us' },
-    { label: 'Projetos', href: '#projects' },
-    { label: 'Protocolo', href: '#protocol' },
-    { label: 'Nicolinas', href: '#nicolinas' },
-    { label: 'Podcast', href: '#podcast' },
-    { label: 'Arquivo', href: '#archive' },
-    { label: 'Contato', href: '#contact' },
+    { label: "Sobre Nos", href: "#about-us" },
+    { label: "Projetos", href: "#projects" },
+    { label: "Protocolo", href: "#protocol" },
+    { label: "Nicolinas", href: "#nicolinas" },
+    { label: "Podcast", href: "#podcast" },
+    { label: "Arquivo", href: "#archive" },
+    { label: "Contato", href: "#contact" },
   ];
 
   function handleClick(item: any) {
