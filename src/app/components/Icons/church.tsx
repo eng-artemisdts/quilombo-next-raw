@@ -1,16 +1,7 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-interface ChurchIconProps {
-  className?: string
-}
-export default function ChurchIcon(props: ChurchIconProps) {
+export default function ChurchIcon() {
   return (
-    <Image
-      src="/assets/church.png"
-      width={418.5859375}
-      height={224}
-      alt="Igreja"
-      {...props}
-    />
-  )
+    <Image src="/assets/church.png" width={418} height={524} alt="Igreja" />
+  );
 }
