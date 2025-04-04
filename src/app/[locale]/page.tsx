@@ -1,5 +1,6 @@
 import AboutUs from "../pages/AboutUs";
 import Projects from "../pages/Projects";
+import Protocol from "../pages/Protocol";
 import Research from "../pages/Research";
 
 export default function HomePage() {
@@ -8,6 +9,7 @@ export default function HomePage() {
       <AboutUs />
       <Research />
       <Projects />
+      <Protocol/>
     </div>
   );
 }
