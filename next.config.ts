@@ -1,11 +1,11 @@
-import { NextConfig } from 'next';
-import createNextIntlPlugin from 'next-intl/plugin';
+import { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule: any) =>
-      rule.test?.test?.('.svg'),
-    )
+      rule.test?.test?.(".svg"),
+    );
 
     config.module.rules.push(
       {
@@ -17,13 +17,13 @@ const nextConfig: NextConfig = {
         test: /\.svg$/i,
         issuer: fileLoaderRule.issuer,
         resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] }, // exclude if *.svg?url
-        use: ['@svgr/webpack'],
+        use: ["@svgr/webpack"],
       },
-    )
+    );
 
-    fileLoaderRule.exclude = /\.svg$/i
+    fileLoaderRule.exclude = /\.svg$/i;
 
-    return config
+    return config;
   },
 };
 const withNextIntl = createNextIntlPlugin();

@@ -15,7 +15,7 @@ const AboutUs = () => {
           <h1 className="font-poppins font-bold text-[50px] leading-[57px] text-green-500">
             {t("title")}
           </h1>
-          <p className="mt-3 max-w-md mx-auto text-base sm:text-lg md:mt-5 md:text-xl md:max-w-3xl min-w-[20rem]">
+          <div className="mt-3 max-w-md mx-auto text-base sm:text-lg md:mt-5 md:text-xl md:max-w-3xl min-w-[20rem]">
             {t.rich("content", {
               strong: (chunks) => <strong>{chunks}</strong>,
               p: (chunks) => (
@@ -24,9 +24,9 @@ const AboutUs = () => {
                 </p>
               ),
             })}
-          </p>
+          </div>
         </div>
-        <Church className="self-center 2xl:self-baseline" />
+        <Church />
       </div>
     </div>
   );
