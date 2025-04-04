@@ -1,9 +1,22 @@
 "use client";
 import ResearchItem from "./components/ResearchItem";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Research = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const researchItems = [
     {
@@ -58,7 +71,7 @@ const Research = () => {
     },
   ];
 
-  const itemsPerSlide = 4;
+  const itemsPerSlide = isMobile ? 1 : 4;
   const totalSlides = Math.ceil(researchItems.length / itemsPerSlide);
 
   const handlePrevSlide = () => {
@@ -74,48 +87,28 @@ const Research = () => {
       className="min-h-screen flex-col min-w-full bg-[#F4AB0B]"
       id="research"
     >
-      <div className="flex flex-col px-[9rem] gap-y-20">
-        <div className="flex w-full justify-between items-center">
+      <div className="flex flex-col justify-center items-center gap-[5rem]">
+        {/* Header */}
+        <div className="flex w-full items-center justify-between px-14">
           <h1 className="font-bold text-[2.75rem] leading-[38px] text-green-500">
             pesquisas
           </h1>
-          <div className="flex items-center gap-4">
+          <div className="items-center gap-4 flex">
             <button onClick={handlePrevSlide} aria-label="Slide anterior">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
+              <i>
+                <FaChevronLeft className="text-green-500 w-6 h-6 md:w-6 md:h-6" />
+              </i>
             </button>
             <button onClick={handleNextSlide} aria-label="Próximo slide">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+              <i>
+                <FaChevronRight className="text-green-500 w-6 h-6 md:w-6 md:h-6" />
+              </i>
             </button>
           </div>
         </div>
 
-        <div className="overflow-hidden w-full">
+        {/* Carousel */}
+        <div className="overflow-hidden w-full p-x-4">
           <div
             className="flex transition-transform duration-300 ease-in-out"
             style={{
@@ -124,7 +117,10 @@ const Research = () => {
             }}
           >
             {Array.from({ length: totalSlides }).map((_, slideIndex) => (
-              <div key={slideIndex} className="flex w-full shrink-0 gap-x-12">
+              <div
+                key={slideIndex}
+                className="flex w-full shrink-0 gap-x-12 pl-[6rem] md:pl-[8rem]"
+              >
                 {researchItems
                   .slice(
                     slideIndex * itemsPerSlide,
