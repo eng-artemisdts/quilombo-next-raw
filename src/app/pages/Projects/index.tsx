@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
         </div>
 
         {/* Cards grid */}
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-8 lg:grid-cols-2 xl:grid-cols-3">
           <Card
             title="projeto carrefour"
             description="Projeto que visa articular os direitos de povos quilombolas e valorizar as memórias e saberes tradicionais nas comunidades."

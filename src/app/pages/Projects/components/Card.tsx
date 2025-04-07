@@ -8,13 +8,10 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, buttonText }) => {
   return (
-    <div className="bg-white rounded-lg p-6 flex flex-col justify-center gap-2">
-      <Image
-        src="/assets/images/DSCF4283.jpg"
-        alt="Carrefour"
-        width={357}
-        height={290}
-      />
+    <div className="bg-white p-6 flex flex-col justify-center gap-2">
+      <div className="w-full h-[290px] relative">
+        <Image src="/assets/images/DSCF4283.jpg" alt="Carrefour" fill />
+      </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
       <button
