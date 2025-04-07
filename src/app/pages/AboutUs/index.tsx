@@ -7,10 +7,10 @@ const AboutUs = () => {
 
   return (
     <div
-      className="min-h-screen flex-col min-w-full bg-yellow-500 px-[8.5rem] py-[6.4rem] flex items-center justify-center"
+      className="min-w-full bg-yellow-500 px-[8.5rem] py-[6.4rem] items-center justify-center"
       id="about-us"
     >
-      <div className="flex md:flex-col 2xl:flex-row justify-center gap-x-[14rem] gap-y-[8rem] ">
+      <div className="flex flex-col xl:flex-row justify-center items-center gap-x-[14rem] gap-y-[8rem]">
         <div className="p-5 rounded-2xl border-2 border-green-500">
           <h1 className="font-poppins font-bold text-[50px] leading-[57px] text-green-500">
             {t("title")}
