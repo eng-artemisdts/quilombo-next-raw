@@ -6,7 +6,10 @@ import OnuIcon from "@/app/components/Icons/onu";
 const Protocol = () => {
 
   return (
-    <div className="bg-blue-500 text-white w-full min-h-scree flex-col min-w-full px-[8.5rem] py-[6.4rem] items-center justify-center md:flex-col 2xl:flex-row justify-center gap-x-[14rem] gap-y-[8rem] ">
+    <div 
+        className="bg-blue-500 text-white w-full min-h-scree flex-col min-w-full px-[8.5rem] py-[6.4rem] items-center justify-center md:flex-col 2xl:flex-row justify-center gap-x-[14rem] gap-y-[8rem] "
+        id="protocol"
+    >
       <div className="flex items-center justify-center mb-30 gap-10">
         <div className="flex flex-col items-center gap-2">
             <div className="p-5 w-200 pb-10 border-2 rounded-2xl border-white">
@@ -27,7 +30,7 @@ const Protocol = () => {
             </div>
             <button
                 type="button"
-                className="text-white bg-red-500 w-140 font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300 md:max-w-[150px]"
+                className="text-white bg-red-500 w-[150px] font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
             >
                 ACESSE
             </button>
@@ -58,7 +61,7 @@ const Protocol = () => {
             </div>
             <button
             type="button"
-            className="text-white bg-red-500 w-140 font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300 md:max-w-[150px]"
+            className="text-white bg-red-500 w-[150px] font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
         >
             SAIBA MAIS
             </button>

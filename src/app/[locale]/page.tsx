@@ -6,7 +6,7 @@ import Research from "../pages/Research";
 
 export default function HomePage() {
   return (
-    <div className="h-full w-full">
+    <div className="h-full w-full ">
       <AboutUs />
       <Research />
       <Projects />
