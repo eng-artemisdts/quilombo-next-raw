@@ -39,7 +39,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* Menu para telas maiores */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             {navItems.map((item) => (
               <NavLink
                 key={item.label}
