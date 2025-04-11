@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
       className="w-full min-h-screen bg-white md:px-[8.5rem] px-[2rem] py-[5.4rem] sm:px-6 lg:px-8"
       id="projects"
     >
-      <div className="max-w-7xl mx-auto relative">
+      <div className="max-w-6xl mx-auto relative">
         {/* Section header */}
         <div className="flex">
           <h2 className="text-3xl font-bold tracking-tight text-red-500 sm:text-4xl w-[10%]">

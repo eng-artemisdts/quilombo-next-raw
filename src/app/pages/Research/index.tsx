@@ -117,16 +117,16 @@ const Research = () => {
 
   return (
     <div
-      className="min-h-screen flex-col min-w-full bg-[#F4AB0B]"
+      className="min-h-screen flex-col min-w-full bg-[#F4AB0B] pb-30 "
       id="research"
     >
       <div className="flex flex-col justify-center items-center gap-[5rem]">
         {/* Header */}
-        <div className="flex w-full items-center justify-between px-14">
+        <div className="flex w-full items-center justify-between xl:w-285 px-14">
           <h1 className="font-bold text-[2.75rem] leading-[38px] text-green-500">
             pesquisas
           </h1>
-          <div className="items-center gap-4 flex">
+          <div className="items-center gap-4 flex ">
             <button
               onClick={handlePrevSlide}
               aria-label="Slide anterior"
@@ -150,7 +150,7 @@ const Research = () => {
 
         {/* Carousel */}
         <div
-          className="overflow-hidden w-full p-x-4"
+          className="overflow-hidden w-full p-x-4 xl:w-285"
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
@@ -164,7 +164,7 @@ const Research = () => {
             {Array.from({ length: totalSlides }).map((_, slideIndex) => (
               <div
                 key={slideIndex}
-                className="flex w-full shrink-0 gap-x-12 pl-[6rem] md:pl-[8rem]"
+                className="flex w-full shrink-0 gap-x-12 pl-[3rem] md:pl-[3rem]"
               >
                 {researchItems
                   .slice(

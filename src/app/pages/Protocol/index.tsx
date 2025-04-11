@@ -7,14 +7,14 @@ const Protocol = () => {
 
   return (
     <div 
-        className="bg-blue-500 text-white w-full min-h-scree flex-col min-w-full px-[8.5rem] py-[6.4rem] items-center justify-center md:flex-col 2xl:flex-row justify-center gap-x-[14rem] gap-y-[8rem] "
+        className="bg-blue-500 text-white w-full min-h-scree flex-col  px-[2rem] pt-[6.4rem] pb-4 items-center justify-center 2xl:flex-row gap-x-[14rem] gap-y-[8rem] "
         id="protocol"
     >
-      <div className="flex items-center justify-center mb-30 gap-10">
-        <div className="flex flex-col items-center gap-2">
-            <div className="p-5 w-200 pb-10 border-2 rounded-2xl border-white">
-                <h1 className="text-d-xl font-bold mb-2">protocolo de consulta</h1>
-                <div className="text-d-s flex flex-col gap-5">
+      <div className="flex max-lg:flex-col-reverse items-center justify-center mb-30 gap-30 max-lg:gap-10">
+        <div className="flex flex-col items-center gap-3 font-light">
+            <div className="p-5 w-full lg:w-160 pb-10 border-2 rounded-2xl border-white">
+                <h1 className="max-sm:text-m-xl text-d-xl font-bold mb-5">protocolo de consulta</h1>
+                <div className="max-sm:text-m-s text-d-s flex flex-col gap-7">
                     <p>
                         O <strong>Protocolo de Consulta</strong> é um instrumento de orientação fruto de um histórico de luta em defesa dos direitos dos Povos e Comunidades Tradicionais, como indígenas e quilombolas.
                     </p>
@@ -35,20 +35,20 @@ const Protocol = () => {
                 ACESSE
             </button>
         </div>
-        <div className="w-150 flex justify-center">
+        <div className="w-100 max-sm:w-30 flex justify-center">
             <SunIcon/>
         </div>
         
       </div>
-      <div className="flex items-center justify-center gap-10">
-            <div className="w-150 flex flex-col items-center justify-center gap-10">
+      <div className="flex max-lg:flex-col items-center justify-center mb-30 gap-30 max-lg:gap-10">
+            <div className="w-100 max-sm:w-30 flex flex-col max-lg:flex-row items-center justify-center gap-10">
                 <OitIcon></OitIcon>
                 <OnuIcon></OnuIcon>
             </div>
-        <div className="flex flex-col items-center gap-2">
-            <div className="p-5 w-200 pb-10 border-2 rounded-2xl border-white">
-                <h1 className="text-d-xl font-bold mb-2">consulta livre, prévia e informada</h1>
-                <div className="text-d-s flex flex-col gap-5">
+        <div className="flex flex-col items-center gap-3 font-light">
+            <div className="p-5 w-full lg:w-160 pb-10 border-2 rounded-2xl border-white">
+                <h1 className="max-sm:text-m-xl text-d-xl font-bold mb-5">consulta livre, prévia e informada</h1>
+                <div className="max-sm:text-m-s text-d-s flex flex-col gap-7">
                     <p>
                         O direito dos povos tradicionais serem consultados, de forma livre e informada, antes de serem tomadas decisões que possam afetar seus bens ou direitos, ou a chamada obrigação estatal de consulta, foi prevista pela primeira vez, em âmbito internacional, em 1989, quando a <strong>Organização Internacional do Trabalho - OIT adotou sua Convenção de número 169.</strong>
                     </p>

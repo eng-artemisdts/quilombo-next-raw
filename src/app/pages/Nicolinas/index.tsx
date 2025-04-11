@@ -7,11 +7,11 @@ const Nicolinas: React.FC = () => {
 
     return (
     <div 
-        className="flex flex-row max-lg:flex-col-reverse px-10 pt-30 items-center justify-center gap-7 max-lg:gap-20 bg-green-500"
+        className="relative flex flex-row max-lg:flex-col-reverse px-10 xl:px-30 pt-30 items-center justify-center gap-7 max-lg:gap-20 bg-[url('/assets/grade-vila1.svg')] bg-cover bg-center"
         id="nicolinas"
     >
-        
-            <div className="flex flex-col pb-30 gap-15">
+         <div className="absolute inset-0 bg-green-500/86"></div>
+            <div className="relative z-10 flex flex-col pb-30 gap-15 ">
                 <div className="max-lg:hidden"><AbsoluteIcon/></div>
                 <Image
                     src="/assets/images/P1015887-2.jpg"
@@ -20,7 +20,7 @@ const Nicolinas: React.FC = () => {
                     height={561}
                 />
             </div>
-            <div className="flex flex-col items-start justify-center text-white gap-10 lg:w-lg">
+            <div className="relative z-10 flex flex-col w-full items-start justify-center text-white gap-10 lg:w-lg">
                 <div className="flex flex-col max-lg:w-100">
                     <h1 className="text-d-xl max-xl:text-m-xl font-bold">
                         grupo de dança nicolinas
