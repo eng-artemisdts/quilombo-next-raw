@@ -16,7 +16,7 @@ const Card: React.FC<CardProps> = ({ title, description, buttonText }) => {
       <p className="text-gray-600 mb-4">{description}</p>
       <button
         type="button"
-        className="text-white bg-red-500 font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300 md:max-w-[150px]"
+        className="text-white bg-red-500 font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300 w-[150px]"
       >
         {buttonText}
       </button>

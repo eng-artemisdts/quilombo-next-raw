@@ -7,11 +7,11 @@ const AboutUs = () => {
 
   return (
     <div
-      className="min-w-full bg-yellow-500 px-[6.5rem] py-[6.4rem] max-xl:px-[3rem] items-center justify-center"
+      className="min-w-full bg-yellow-500 px-30 py-[6.4rem] max-xl:px-[3rem] items-center justify-center "
       id="about-us"
     >
-      <div className="flex flex-col lg:flex-row justify-center items-center max-xl:gap-x-[2rem] gap-y-[1rem] max-lg:px-5">
-        <div className="p-5 rounded-2xl border-2 border-green-500">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-x-[5rem] gap-y-[1rem] max-lg:px-5 ">
+        <div className="p-5 rounded-2xl border-2 border-green-500 lg:w-xl">
           <h1 className="font-poppins font-bold text-[50px] leading-[57px] text-green-500">
             {t("title")}
           </h1>
@@ -26,7 +26,9 @@ const AboutUs = () => {
             })}
           </div>
         </div>
+        <div className="w-100 max-sm:w-30 flex justify-center">
           <Church />
+        </div>
       </div>
     </div>
   );
