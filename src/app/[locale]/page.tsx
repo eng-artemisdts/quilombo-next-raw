@@ -1,9 +1,10 @@
 import AboutUs from "../pages/AboutUs";
 import ContactUs from "../pages/ContactUs";
 import Nicolinas from "../pages/Nicolinas";
+import Research from "../pages/Research";
 import Projects from "../pages/Projects";
 import Protocol from "../pages/Protocol";
-import Research from "../pages/Research";
+import Podcast from "../pages/Papo de Malungo";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Protocol />
       <Nicolinas />
       <ContactUs />
+      <Podcast />
     </div>
   );
 }
