@@ -1,4 +1,5 @@
 import AboutUs from "../pages/AboutUs";
+import ContactUs from "../pages/ContactUs";
 import Nicolinas from "../pages/Nicolinas";
 import Projects from "../pages/Projects";
 import Protocol from "../pages/Protocol";
@@ -11,7 +12,8 @@ export default function HomePage() {
       <Research />
       <Projects />
       <Protocol />
-      <Nicolinas/>
+      <Nicolinas />
+      <ContactUs />
     </div>
   );
 }
