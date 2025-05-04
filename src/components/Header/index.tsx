@@ -5,7 +5,7 @@ import NavLink from "./NavLink";
 import { FaSearch } from "react-icons/fa";
 import { FiGlobe } from "react-icons/fi";
 import { HiMenu, HiX } from "react-icons/hi";
-import Logo from "../../../../public/assets/logo.svg";
+import Logo from "@public/assets/logo.svg";
 import { scrollToSection } from "@/lib/utils";
 
 const Header: React.FC = () => {

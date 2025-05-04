@@ -1,5 +1,5 @@
 import React from "react";
-import GoogleMaps from "@/app/components/Maps";
+import GoogleMaps from "@/components/Maps";
 
 const ContactUs: React.FC = () => {
   const formFields = [

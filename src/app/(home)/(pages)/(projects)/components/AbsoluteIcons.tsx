@@ -1,5 +1,5 @@
 import React from "react";
-import SvgIcon from "@/app/components/SvgIcon";
+import SvgIcon from "@/components/SvgIcon";
 const AbsoluteIcons: React.FC = () => {
   return (
     <div className="flex absolute top-0 right-0">

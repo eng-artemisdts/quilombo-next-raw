@@ -1,6 +1,6 @@
-import SunIcon from "@/app/components/Icons/sun";
-import OitIcon from "@/app/components/Icons/oit";
-import OnuIcon from "@/app/components/Icons/onu";
+import SunIcon from "@/components/Icons/sun";
+import OitIcon from "@/components/Icons/oit";
+import OnuIcon from "@/components/Icons/onu";
 
 const Protocol = () => {
   return (

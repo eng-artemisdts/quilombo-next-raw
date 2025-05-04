@@ -1,4 +1,4 @@
-import Church from "@/app/components/Icons/church";
+import Church from "@/components/Icons/church";
 
 const AboutUs = () => {
   return (
