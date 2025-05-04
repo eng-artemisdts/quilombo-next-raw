@@ -1,4 +1,3 @@
-"use client";
 import Church from "@/app/components/Icons/church";
 
 const AboutUs = () => {

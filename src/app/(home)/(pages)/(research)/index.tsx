@@ -1,25 +1,6 @@
-"use client";
 import ResearchItem from "./components/ResearchItem";
-import { useState, useEffect } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Research = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
-  const [touchStartX, setTouchStartX] = useState<number | null>(null);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    handleResize(); // Set initial value
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   const researchItems = [
     {
       title: "“Os Batuques do Silêncio”",
@@ -73,47 +54,8 @@ const Research = () => {
     },
   ];
 
-  const itemsPerSlide = isMobile ? 1 : 4;
+  const itemsPerSlide = 4;
   const totalSlides = Math.ceil(researchItems.length / itemsPerSlide);
-
-  const handlePrevSlide = () => {
-    setCurrentSlide((prev) => Math.max(prev - 1, 0));
-  };
-
-  const handleNextSlide = () => {
-    setCurrentSlide((prev) => Math.min(prev + 1, totalSlides - 1));
-  };
-
-  const handleSwipe = (direction: "left" | "right") => {
-    if (direction === "left") {
-      handleNextSlide();
-    } else if (direction === "right") {
-      handlePrevSlide();
-    }
-  };
-
-  const swipeThreshold = 50;
-
-  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    setTouchStartX(e.changedTouches[0].clientX);
-  };
-
-  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
-    const touchEndX = e.changedTouches[0].clientX;
-    if (touchStartX !== null) {
-      const distance = touchStartX - touchEndX;
-      if (Math.abs(distance) > swipeThreshold) {
-        if (distance > 0) {
-          // Swipe para a esquerda
-          handleSwipe("left");
-        } else {
-          // Swipe para a direita
-          handleSwipe("right");
-        }
-      }
-    }
-    setTouchStartX(null);
-  };
 
   return (
     <div
@@ -126,38 +68,13 @@ const Research = () => {
           <h1 className="font-bold text-[2.75rem] leading-[38px] text-green-500">
             pesquisas
           </h1>
-          <div className="items-center gap-4 flex ">
-            <button
-              onClick={handlePrevSlide}
-              aria-label="Slide anterior"
-              disabled={currentSlide === 0}
-            >
-              <FaChevronLeft
-                className={`text-green-500 w-6 h-6 md:w-6 md:h-6 transition-colors ${currentSlide === 0 ? "opacity-50 cursor-not-allowed" : "hover:text-green-600 hover:cursor-pointer"}`}
-              />
-            </button>
-            <button
-              onClick={handleNextSlide}
-              aria-label="Próximo slide"
-              disabled={currentSlide === totalSlides - 1}
-            >
-              <FaChevronRight
-                className={`text-green-500 w-6 h-6 md:w-6 md:h-6 transition-colors ${currentSlide === totalSlides - 1 ? "opacity-50 cursor-not-allowed" : "hover:text-green-600 hover:cursor-pointer"}`}
-              />
-            </button>
-          </div>
         </div>
 
         {/* Carousel */}
-        <div
-          className="overflow-hidden w-full p-x-4 xl:w-285"
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
-        >
+        <div className="overflow-hidden w-full p-x-4 xl:w-285">
           <div
             className="flex transition-transform duration-300 ease-in-out"
             style={{
-              transform: `translateX(-${currentSlide * 100}%)`,
               width: `${totalSlides * 100}%`,
             }}
           >
