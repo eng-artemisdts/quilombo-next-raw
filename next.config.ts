@@ -1,8 +1,8 @@
 import { NextConfig } from "next";
-import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
   webpack(config) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const fileLoaderRule = config.module.rules.find((rule: any) =>
       rule.test?.test?.(".svg"),
     );
@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
       {
         test: /\.svg$/i,
         issuer: fileLoaderRule.issuer,
-        resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] }, // exclude if *.svg?url
+        resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] },
         use: ["@svgr/webpack"],
       },
     );
@@ -26,5 +26,5 @@ const nextConfig: NextConfig = {
     return config;
   },
 };
-const withNextIntl = createNextIntlPlugin();
-export default withNextIntl(nextConfig);
+
+export default nextConfig;
