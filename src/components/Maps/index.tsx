@@ -15,7 +15,7 @@ export default function GoogleMaps({
   lng = -43.231381,
   zoom = 18,
   width = "100%",
-  height = "500px",
+  height = "300px",
 }: GoogleMapsClientProps) {
   const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
 
