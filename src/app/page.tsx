@@ -5,6 +5,7 @@ import Research from "./(home)/(pages)/(research)";
 import Projects from "./(home)/(pages)/(projects)";
 import Protocol from "./(home)/(pages)/(protocol)";
 import Podcast from "./(home)/(pages)/(papo-de-malungo)";
+import AccessArchive from "./(home)/(pages)/(access-archive)";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Protocol />
       <Nicolinas />
       <Podcast />
+      <AccessArchive />
       <ContactUs />
     </div>
   );

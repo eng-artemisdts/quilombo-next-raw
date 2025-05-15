@@ -2,23 +2,25 @@
 import React from "react";
 import GoogleMaps from "@/components/Maps";
 import { ContactForm } from "./components/ContactForm";
+import SocialMedia from "./components/SocialMedia";
 
 const ContactUs: React.FC = () => {
   return (
     <section
-      className="flex w-full min-h-screen bg-red-500 md:px-[8.5rem] px-[2rem] py-[5.4rem] sm:px-6 lg:px-8"
-      id="contact-us"
+      className="min-h-screen bg-red-500 flex px-[169px] py-[91px]"
+      id="contact"
     >
-      <div className="flex">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+      <div className="w-full">
+        <h2 className="text-[50px] font-bold tracking-tight text-white">
           fale conosco
         </h2>
 
-        <div className="mt-12">
+        <div className="mt-4">
           <ContactForm />
         </div>
       </div>
-      <div className="mt-12">
+      <div>
+        <SocialMedia />
         <GoogleMaps />
       </div>
     </section>

@@ -1,4 +1,6 @@
 import { useForm, SubmitHandler } from "react-hook-form";
+import ContactInput from "./ContactInput";
+import ContactTextArea from "./ContactTextArea";
 
 type FormValues = {
   nome: string;
@@ -21,67 +23,61 @@ export const ContactForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3"
+      className="grid gap-3 lg:grid-cols-2 xl:grid-cols-3"
     >
       <div className="col-span-2">
-        <input
-          {...register("nome", { required: "Nome é obrigatório" })}
+        <ContactInput
+          register={register}
+          errors={errors}
+          name="nome"
           type="text"
-          className="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-[1.25rem] bg-[rgba(255,255,255,0.45)]"
-          placeholder="Seu nome"
+          placeholder="nome completo"
+          validation={{ required: "Nome é obrigatório" }}
+          className="mt-1 block w-full h-[16px]"
         />
-        {errors.nome && (
-          <span className="text-red-500">{errors.nome.message as string}</span>
-        )}
       </div>
       <div className="col-span-2">
-        <input
-          {...register("email", { required: "Email é obrigatório" })}
-          type="email"
-          className="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-          placeholder="Seu email"
-        />
-        {errors.email && (
-          <span className="text-red-500">{errors.email.message as string}</span>
-        )}
-      </div>
-      <div className="col-span-2">
-        <input
-          {...register("telefone", {
-            required: "Telefone é obrigatório",
-          })}
+        <ContactInput
+          register={register}
+          errors={errors}
+          name="telefone"
           type="tel"
-          className="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-          placeholder="Seu telefone"
+          placeholder="telefone"
+          validation={{ required: "Telefone é obrigatório" }}
+          className="mt-1 block w-full h-[16px]"
+          mask={(value) => value.replace(/\D/g, "")}
         />
-        {errors.telefone && (
-          <span className="text-red-500">
-            {errors.telefone.message as string}
-          </span>
-        )}
       </div>
       <div className="col-span-2">
-        <label className="block text-sm font-medium text-gray-700">
-          Mensagem
-        </label>
-        <textarea
-          {...register("mensagem", {
-            required: "Mensagem é obrigatória",
-          })}
-          className="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-          rows={4}
-          placeholder="Sua mensagem"
+        <ContactInput
+          register={register}
+          errors={errors}
+          name="email"
+          type="email"
+          placeholder="email"
+          validation={{ required: "Email é obrigatório" }}
+          className="mt-1 block w-full h-[16px]"
+          mask={(value) =>
+            value.replace(
+              /[^a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+              ""
+            )
+          }
         />
-        {errors.mensagem && (
-          <span className="text-red-500">
-            {errors.mensagem.message as string}
-          </span>
-        )}
       </div>
       <div className="col-span-2">
+        <ContactTextArea
+          register={register}
+          errors={errors}
+          name="mensagem"
+          placeholder="mensagem"
+          validation={{ required: "Mensagem é obrigatória" }}
+        />
+      </div>
+      <div className="col-span-2 flex justify-end">
         <button
           type="submit"
-          className="text-white bg-red-500 font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
+          className="text-red-500 bg-white font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
         >
           Enviar
         </button>

@@ -4,7 +4,7 @@ import React from "react";
 const Podcast: React.FC = () => {
   return (
     <div
-      className="relative flex flex-row max-lg:flex-col-reverse px-10 xl:px-10 py-30 items-start justify-center gap-7 max-lg:gap-20 bg-black "
+      className="relative min-h-screen flex flex-row max-lg:flex-col-reverse px-10 xl:px-10 py-30 items-start justify-center gap-7 max-lg:gap-20 bg-black "
       id="podcast"
     >
       <div className="absolute inset-0 "></div>

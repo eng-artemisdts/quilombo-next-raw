@@ -14,8 +14,8 @@ export default function GoogleMaps({
   lat = -20.37993,
   lng = -43.231381,
   zoom = 18,
-  width = "100%",
-  height = "300px",
+  width = "524px",
+  height = "313px",
 }: GoogleMapsClientProps) {
   const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
 
@@ -35,14 +35,12 @@ export default function GoogleMaps({
     () => ({
       disableDefaultUI: false,
       clickableIcons: true,
+      mapTypeId: "satellite",
     }),
     []
   );
 
-  // Controla o callback quando o mapa é carregado
-  const onLoad = useCallback((map: google.maps.Map) => {
-    console.log("Mapa carregado:", map);
-  }, []);
+  const onLoad = useCallback((map: google.maps.Map) => {}, []);
 
   if (!isLoaded) {
     return <div>Carregando mapa...</div>;
