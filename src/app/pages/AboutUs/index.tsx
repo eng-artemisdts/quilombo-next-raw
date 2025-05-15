@@ -7,7 +7,7 @@ const AboutUs = () => {
 
   return (
     <div
-      className="min-w-full bg-yellow-500 px-30 py-[6.4rem] max-xl:px-[3rem] items-center justify-center "
+      className="w-full bg-yellow-500 px-30 py-[6.4rem] max-xl:px-[3rem] items-center justify-center "
       id="about-us"
     >
       <div className="flex flex-col lg:flex-row justify-center items-center gap-x-[5rem] gap-y-[1rem] max-lg:px-5 ">

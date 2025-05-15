@@ -29,7 +29,7 @@ const Header: React.FC = () => {
 
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white shadow z-50">
+    <header className="w-full fixed top-0 left-0 right-0 bg-white shadow z-50">
       <div className="max-w-full mx-auto px-4 py-2 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">          
           <div className="flex-shrink-0">

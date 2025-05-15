@@ -1,22 +1,25 @@
 "use client";
+import Carousel from "@/app/components/Carousel";
 import Image from "next/image";
 import React from "react";
 
+
+const images = [
+    "/assets/imagesPodcast/Oficina_Quilombolas_18_08_24-2.jpg",
+    "/assets/imagesPodcast/FEV2025-byAIDIAX-71.jpg",
+    "/assets/imagesPodcast/FEV2025-byAIDIAX-68.jpg",
+    "/assets/imagesPodcast/FEV2025-byAIDIAX-83.jpg",
+    "/assets/imagesPodcast/Sem_titulo.png",
+];
 const Podcast: React.FC = () => {
 
     return (
     <div 
         className="relative flex flex-row max-lg:flex-col-reverse px-10 xl:px-10 py-30 items-start justify-center gap-7 max-lg:gap-20 bg-black "
         id="podcast"
-    >
-         <div className="absolute inset-0 "></div>
+    > <div className="absolute inset-0 "></div>
             <div className="relative z-10 flex flex-col gap-15 ">
-                <Image
-                    src="/assets/images/P1015887-2.jpg"
-                    alt="Nicolinas"
-                    width={840}
-                    height={561}
-                />
+                <Carousel images={images}/>
             </div>
             <div className="relative z-10 flex flex-col w-full items-start justify-center text-white gap-10 lg:w-lg">
                     <div className="text-d-xl max-xl:text-m-xl font-bold">
@@ -27,7 +30,7 @@ const Podcast: React.FC = () => {
                             height={110}
                         />
                     </div>
-                <div className="flex flex-col max-lg:w-100">
+                <div className="flex flex-col max-lg:w-100 gap-5">
                     
                     <div className="flex flex-col font-light gap-8 max-lg:gap-5 text-d-s max-xl:text-m-s ">
                         <p>

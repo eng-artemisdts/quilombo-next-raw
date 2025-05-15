@@ -1,7 +1,18 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import AbsoluteIcon from "./components/AbsoluteIcon";
+import Carousel from "@/app/components/Carousel";
+
+    const images = [
+        "/assets/imagesNicolinas/P1015887-2.jpg",
+        "/assets/imagesNicolinas/DSCF4283.jpg",
+        "/assets/imagesNicolinas/DSCF4434.jpg",
+        "/assets/imagesNicolinas/P1016074.jpg",
+        "/assets/imagesNicolinas/P1204441.jpg",
+        "/assets/imagesNicolinas/P1204673.jpg",
+        "/assets/imagesNicolinas/SETEMBRO-17.jpg",
+        
+    ];
 
 const Nicolinas: React.FC = () => {
 
@@ -16,12 +27,7 @@ const Nicolinas: React.FC = () => {
             </div>
             <div className="z-10 flex gap-7 max-lg:flex-col-reverse max-lg:gap-20 xl:px-10">
                 <div className="pt-5">
-                    <Image
-                        src="/assets/images/P1015887-2.jpg"
-                        alt="Nicolinas"
-                        width={840}
-                        height={561}
-                    />
+                    <Carousel images={images}/>
                 </div>
                 <div className="relative z-10 flex flex-col w-full items-start justify-center text-white gap-10 lg:w-lg">
                     <div className="flex flex-col max-lg:w-100 items-start">
