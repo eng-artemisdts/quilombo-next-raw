@@ -4,9 +4,12 @@ interface CardProps {
   title: string;
   description: string;
   buttonText: string;
+  handleClick?: () => void;
+    
+  
 }
 
-const Card: React.FC<CardProps> = ({ title, description, buttonText }) => {
+const Card: React.FC<CardProps> = ({ title, description, buttonText, handleClick }) => {
   return (
     <div className="bg-white p-6 flex flex-col justify-center gap-2">
       <div className="w-full h-[290px] relative">
@@ -17,6 +20,7 @@ const Card: React.FC<CardProps> = ({ title, description, buttonText }) => {
       <button
         type="button"
         className="text-white bg-red-500 font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300 w-[150px]"
+        onClick={handleClick}
       >
         {buttonText}
       </button>
