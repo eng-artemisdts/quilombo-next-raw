@@ -5,17 +5,13 @@ import Card from "./components/Card";
 import AbsoluteIcons from "./components/AbsoluteIcons";
 import { useRouter } from "next/navigation";
 
-
-
 const Projects: React.FC = () => {
-
   const router = useRouter();
 
   const carrefourProject = () => {
     router.push("/carrefour");
   };
-  
-  
+
   return (
     <section
       className="w-full min-h-screen bg-white md:px-[8.5rem] px-[2rem] py-[5.4rem] sm:px-6 lg:px-8"
@@ -28,7 +24,7 @@ const Projects: React.FC = () => {
             nossos projetos
           </h2>
 
-          <AbsoluteIcons />
+          {/* <AbsoluteIcons /> */}
         </div>
 
         {/* Cards grid */}
@@ -37,7 +33,7 @@ const Projects: React.FC = () => {
             title="projeto carrefour"
             description="Projeto que visa articular os direitos de povos quilombolas e valorizar as memórias e saberes tradicionais nas comunidades."
             buttonText="SAIBA MAIS"
-            handleClick= {carrefourProject}
+            handleClick={carrefourProject}
           />
 
           <Card
@@ -45,7 +41,6 @@ const Projects: React.FC = () => {
             description="Projeto voltado à capacitação em percussão, penteados africanos, turbantes e dança, enriquecendo a expressão cultural do grupo Nicolinas."
             buttonText="SAIBA MAIS"
             // handleClick= {nul}
-
           />
 
           <Card
@@ -53,7 +48,6 @@ const Projects: React.FC = () => {
             description="O Programa de Aquisição de Alimentos tem como finalidades promover o acesso à alimentação e incentivar a agricultura familiar."
             buttonText="SAIBA MAIS"
             // handleClick= {}
-
           />
         </div>
       </div>

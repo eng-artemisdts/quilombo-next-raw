@@ -1,9 +1,10 @@
 "use client";
-
 import React from "react";
 import { motion } from "framer-motion";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Input from "./Input";
+import { Timestamp, addDoc, collection } from "firebase/firestore";
+import { db } from "@/lib/firebase/client";
 
 interface FormData {
   username: string;
@@ -13,8 +14,27 @@ interface FormData {
 const RegisterForm: React.FC = () => {
   const { register, handleSubmit } = useForm<FormData>();
 
-  const onSubmit: SubmitHandler<FormData> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<FormData> = async () => {
+    try {
+      const data = {
+        fullName: "teste",
+        email: "teste@teste.com",
+        accessDeadline: new Date(),
+        registerType: "admin",
+      };
+
+      debugger;
+
+      await addDoc(collection(db, "users"), {
+        ...data,
+        accessDeadline: Timestamp.fromDate(data.accessDeadline),
+        createdAt: Timestamp.now(),
+        updatedAt: Timestamp.now(),
+      });
+      alert("Usuário salvo!");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
