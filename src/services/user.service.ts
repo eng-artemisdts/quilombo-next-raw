@@ -97,7 +97,7 @@ class UserService {
     const hashed = data.password as string;
     const match = bcrypt.compareSync(password, hashed);
     if (!match) {
-      throw new Error("Senha incorreta.");
+      throw new Error("Credenciais inválidas.");
     }
 
     const accessDeadline = (data.accessDeadline as Timestamp).toDate();

@@ -1,5 +1,5 @@
-import "./globals.css";
-import Header from "../components/Header";
+import "@/app/globals.css";
+import AppHeader from "@/components/AppHeader";
 import { Poppins } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
@@ -9,7 +9,7 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export default async function HomeLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -24,7 +24,7 @@ export default async function HomeLayout({
         />
       </head>
       <body className={poppins.className}>
-        <Header />
+        <AppHeader />
         <Toaster position="top-right" />
         {children}
       </body>
