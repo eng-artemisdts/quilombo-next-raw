@@ -11,7 +11,15 @@ const Projects: React.FC = () => {
   const carrefourProject = () => {
     router.push("/carrefour");
   };
+  
+  const paaProject = () => {
+    router.push("/paa");
+  };
 
+  const nicolinasProject = () => {
+    router.push("/nicolinas");
+  };
+  
   return (
     <section
       className="w-full min-h-screen bg-white md:px-[8.5rem] px-[2rem] py-[5.4rem] sm:px-6 lg:px-8"
@@ -40,14 +48,14 @@ const Projects: React.FC = () => {
             title="projeto nicolinas"
             description="Projeto voltado à capacitação em percussão, penteados africanos, turbantes e dança, enriquecendo a expressão cultural do grupo Nicolinas."
             buttonText="SAIBA MAIS"
-            // handleClick= {nul}
+            handleClick= {nicolinasProject}
           />
 
           <Card
             title="paa quilombola"
             description="O Programa de Aquisição de Alimentos tem como finalidades promover o acesso à alimentação e incentivar a agricultura familiar."
             buttonText="SAIBA MAIS"
-            // handleClick= {}
+            handleClick= {paaProject}
           />
         </div>
       </div>
