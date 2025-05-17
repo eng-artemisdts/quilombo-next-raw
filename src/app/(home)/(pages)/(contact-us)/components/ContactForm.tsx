@@ -23,9 +23,9 @@ export const ContactForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="grid gap-3 lg:grid-cols-2 xl:grid-cols-3"
+      className="flex flex-col w-full gap-3 "
     >
-      <div className="col-span-2">
+      <div className="">
         <ContactInput
           register={register}
           errors={errors}
@@ -36,7 +36,7 @@ export const ContactForm: React.FC = () => {
           className="mt-1 block w-full h-[16px]"
         />
       </div>
-      <div className="col-span-2">
+      <div className="">
         <ContactInput
           register={register}
           errors={errors}
@@ -48,7 +48,7 @@ export const ContactForm: React.FC = () => {
           mask={(value) => value.replace(/\D/g, "")}
         />
       </div>
-      <div className="col-span-2">
+      <div className="">
         <ContactInput
           register={register}
           errors={errors}
@@ -65,7 +65,7 @@ export const ContactForm: React.FC = () => {
           }
         />
       </div>
-      <div className="col-span-2">
+      <div className="">
         <ContactTextArea
           register={register}
           errors={errors}
@@ -74,10 +74,10 @@ export const ContactForm: React.FC = () => {
           validation={{ required: "Mensagem é obrigatória" }}
         />
       </div>
-      <div className="col-span-2 flex justify-end">
+      <div className=" flex justify-end">
         <button
           type="submit"
-          className="text-red-500 bg-white font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
+          className="text-red-500 bg-white font-semibold py-2 px-6 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
         >
           Enviar
         </button>

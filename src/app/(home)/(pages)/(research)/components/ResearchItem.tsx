@@ -17,9 +17,9 @@ const ResearchItem: React.FC<ResearchItemProps> = ({
     <div className="flex flex-col gap-y-[1.5rem] cursor-pointer">
       <div className="flex flex-col gap-y-[1.2rem] max-w-[320px]">
         <Image src={imageUrl} alt={title} width={319} height={381} />
-        <h1 className="font-bold text-[1.6rem] text-green-500">{title}</h1>
-        <p className="text-[1.3rem] text-green-500">{description}</p>
-        <p className="text-[1.4rem] text-green-500">
+        <h1 className="font-bold text-m-m text-green-500">{title}</h1>
+        <p className="text-m-s text-green-500">{description}</p>
+        <p className="text-m-s text-green-500">
           <strong>{author}</strong>
         </p>
       </div>
