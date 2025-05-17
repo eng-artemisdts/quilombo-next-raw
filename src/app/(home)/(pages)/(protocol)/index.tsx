@@ -5,17 +5,17 @@ import OnuIcon from "@/components/Icons/onu";
 const Protocol = () => {
   return (
     <div
-      className="bg-blue-500 text-white w-full min-h-scree flex flex-col pt-[6.4rem] pb-4 items-center justify-center 2xl:flex-row gap-x-[14rem] gap-y-[8rem]  "
+      className="bg-blue-500 text-white w-full min-h-screen flex flex-col pt-[6.4rem] pb-4 items-center justify-center 2xl:flex-row gap-x-[14rem] gap-y-[8rem] px-10 "
       id="protocol"
     >
       <div className=" max-w-7xl justify-center items-center">
         <div className="flex max-lg:flex-col-reverse items-center justify-center mb-30 gap-30 max-lg:gap-10">
-          <div className="flex flex-col items-center gap-3 font-light">
+          <div className="flex flex-col items-center gap-5 font-light">
             <div className="p-5 w-full pb-10 border-2 rounded-2xl border-white">
-              <h1 className="max-sm:text-m-xl text-d-xl font-bold mb-5">
+              <h1 className="max-lg:text-m-xl text-d-xl font-bold mb-5">
                 protocolo de consulta
               </h1>
-              <div className="max-sm:text-m-s text-d-s flex flex-col gap-7">
+              <div className="max-lg:text-m-s text-d-s flex flex-col gap-7">
                 <p>
                   O <strong>Protocolo de Consulta</strong> é um instrumento de
                   orientação fruto de um histórico de luta em defesa dos direitos
@@ -46,21 +46,21 @@ const Protocol = () => {
               ACESSE
             </a>
           </div>
-          <div className="w-250 max-sm:w-30 flex justify-center">
+          <div className="w-250 max-lg:w-30 flex justify-center">
             <SunIcon />
           </div>
         </div>
         <div className="flex max-lg:flex-col items-center justify-center mb-30 gap-30 max-lg:gap-10">
-          <div className="w-350 max-sm:w-30 flex flex-col max-lg:flex-row items-center justify-center gap-10">
+          <div className="w-350 max-lg:w-30 flex flex-col max-lg:flex-row items-center justify-center gap-10">
             <OitIcon></OitIcon>
             <OnuIcon></OnuIcon>
           </div>
-          <div className="flex flex-col items-center gap-3 font-light">
+          <div className="flex flex-col items-center gap-5 font-light">
             <div className="p-5 w-full pb-10 border-2 rounded-2xl border-white">
-              <h1 className="max-sm:text-m-xl text-d-xl font-bold mb-5">
+              <h1 className="max-lg:text-m-xl text-d-xl font-bold mb-5">
                 consulta livre, prévia e informada
               </h1>
-              <div className="max-sm:text-m-s text-d-s flex flex-col gap-7">
+              <div className="max-lg:text-m-s text-d-s flex flex-col gap-7">
                 <p>
                   O direito dos povos tradicionais serem consultados, de forma
                   livre e informada, antes de serem tomadas decisões que possam
