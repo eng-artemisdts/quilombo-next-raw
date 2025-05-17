@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 interface CardProps {
+  image: string;
   title: string;
   description: string;
   buttonText: string;
@@ -9,11 +10,11 @@ interface CardProps {
   
 }
 
-const Card: React.FC<CardProps> = ({ title, description, buttonText, handleClick }) => {
+const Card: React.FC<CardProps> = ({image, title, description, buttonText, handleClick }) => {
   return (
     <div className="bg-white p-6 flex flex-col justify-center gap-2">
       <div className="w-full h-[290px] relative">
-        <Image src="/assets/images/DSCF4283.jpg" alt="Carrefour" fill />
+        <Image src={image} alt="Carrefour" fill />
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
