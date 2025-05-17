@@ -1,15 +1,18 @@
-export default function ArquivoPage() {
+import LoginForm from "./components/LoginForm";
+import LoginText from "./components/LoginText";
+
+export default function AcessoPage() {
   return (
     <div
-      className="min-h-screen w-full"
+      className="min-h-screen w-full px-[89px] py-[205px] max-xl:px-[3rem] flex justify-between"
       style={{
-        backgroundImage: "url('/assets/images/bg-arquivo.jpeg')",
+        backgroundImage: "url('/assets/images/bg-arquivo.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <h1>Arquivo Page</h1>
-      <p>This is the Arquivo page content.</p>
+      <LoginText />
+      <LoginForm />
     </div>
   );
 }
