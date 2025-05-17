@@ -5,6 +5,7 @@ interface InputProps {
   type: string;
   placeholder: string;
   name: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   register: UseFormRegister<any>;
   className?: string;
 }

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from "react";
 import { UseFormRegister, FieldErrors } from "react-hook-form";
 
@@ -14,7 +15,6 @@ type ContactInputProps = {
 
 const ContactInput: React.FC<ContactInputProps> = ({
   register,
-  errors,
   name,
   type,
   placeholder,

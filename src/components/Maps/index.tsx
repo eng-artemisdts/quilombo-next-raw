@@ -1,6 +1,6 @@
 "use client";
 import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
-import { useCallback, useMemo } from "react";
+import { useMemo } from "react";
 
 interface GoogleMapsClientProps {
   lat?: number;
@@ -40,8 +40,6 @@ export default function GoogleMaps({
     []
   );
 
-  const onLoad = useCallback((map: google.maps.Map) => {}, []);
-
   if (!isLoaded) {
     return <div>Carregando mapa...</div>;
   }
@@ -54,7 +52,6 @@ export default function GoogleMaps({
       }}
       center={center}
       zoom={zoom}
-      onLoad={onLoad}
       options={mapOptions}
     >
       <Marker position={center} />
