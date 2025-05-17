@@ -1,9 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Input from "./Input";
+import { userService } from "@/services/user.service";
+import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
+import axios from "axios";
+import { FaSpinner } from "react-icons/fa";
 
 interface FormData {
   username: string;
@@ -12,9 +17,31 @@ interface FormData {
 
 const LoginForm: React.FC = () => {
   const { register, handleSubmit } = useForm<FormData>();
+  const router = useRouter();
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const onSubmit: SubmitHandler<FormData> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<FormData> = async (data: FormData) => {
+    setLoading(true);
+    try {
+      const user = await userService.loginUser(data.username, data.password);
+      const res = await axios.post(
+        "/api/auth/session",
+        {
+          id: user.id,
+          role: user.role,
+        },
+        {
+          headers: { "Content-Type": "application/json" },
+        }
+      );
+      if (res.status !== 200) throw new Error("Erro ao criar sessão");
+
+      router.push("/arquivo");
+    } catch (err: any) {
+      toast.error(err.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -43,9 +70,10 @@ const LoginForm: React.FC = () => {
         />
         <button
           type="submit"
-          className="text-white text-[1rem] bg-green-500 font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300 uppercase"
+          className="text-white text-[1rem] bg-green-500 font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300 uppercase flex items-center justify-center"
+          disabled={loading}
         >
-          Acessar
+          {loading ? <FaSpinner className="animate-spin mr-2" /> : "Acessar"}
         </button>
       </form>
     </motion.aside>

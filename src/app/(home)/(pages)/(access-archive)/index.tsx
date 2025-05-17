@@ -18,7 +18,7 @@ const AccessArchive: React.FC = () => {
       id="archive"
       className="min-h-screen flex flex-col justify-center gap-6 px-8 py-16 bg-no-repeat"
       style={{
-        backgroundImage: "url('/assets/images/bg-arquivo.jpeg')",
+        backgroundImage: "url('/assets/images/bg-arquivo.png')",
         backgroundSize: "135%",
         backgroundPosition: "0 10%",
       }}
