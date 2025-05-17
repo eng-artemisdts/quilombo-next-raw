@@ -1,0 +1,19 @@
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  opacity: 0.5;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 50px;
+  font-weight: bold;
+}
