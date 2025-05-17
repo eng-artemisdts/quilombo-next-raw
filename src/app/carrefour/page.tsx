@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ArquivoPage() {
   return (
-    <div className="flex flex-col px-20 py-30 container mx-auto gap-20">
+    <div className="flex flex-col max-w-7xl py-30 container mx-auto gap-20">
       <div className="flex flex-col md:flex-row gap-8 justify-center">
         <div className="border-2 border-blue-500 rounded-2xl md:w-2/3 w-full p-8 text-blue-500">
           <h1 className="text-d-xl font-light">
@@ -11,7 +11,7 @@ export default function ArquivoPage() {
           <h1 className="text-d-xl font-bold">
             “memórias, saberes e direitos resistência de um povo!”
           </h1>
-          <div className="flex flex-col text-d-s font-light gap-6 py-8">
+          <div className="flex flex-col text-d-s font-normal gap-6 py-8">
             <p>
               O projeto <strong>“Memórias, Saberes e Direitos Quilombolas: a Resistência de um Povo!”</strong> é uma iniciativa inovadora que se insere no âmbito do edital de campanhas educativas do Grupo Carrefour Brasil.
             </p>
@@ -25,7 +25,7 @@ export default function ArquivoPage() {
           <h3 className="text-d-l font-bold">
             objetivos do projeto
           </h3>
-          <ul className="list-disc list-inside text-d-s font-light space-y-6 mt-4">
+          <ul className="list-disc list-inside text-d-s font-normal space-y-6 mt-4">
             <li>
               <strong>Fortalecimento da Identidade Cultural:</strong> resgatar e preservar as tradições, práticas culturais e histórias das comunidades quilombolas, garantindo que os saberes ancestrais sejam passados às futuras gerações.
             </li>
@@ -97,7 +97,7 @@ export default function ArquivoPage() {
             <h1 className="text-d-l font-bold">
             estrutura do projeto
             </h1>
-            <p className="text-d-s font-light">
+            <p className="text-d-s font-normal">
               O projeto é dividido em dois eixos que se complementam e se reforçam:
             </p>
           </div>
@@ -105,11 +105,11 @@ export default function ArquivoPage() {
             <h3 className="text-d-m font-bold pb-4">
               1. memórias e saberes tradicionais
             </h3>
-            <p className="text-d-s font-light">
+            <p className="text-d-s font-normal">
               Responsável: <strong> Vittor Policarpo Souza Martins</strong>
               Este eixo tem como foco a preservação e valorização daw memórias e dos saberes das comunidades, estruturado em cinco etapas:
             </p>
-            <ul className="list-disc list-inside text-d-s font-light pl-6 pb-6 space-y-6 mt-4">
+            <ul className="list-disc list-inside text-d-s font-normal pl-6 pb-6 space-y-6 mt-4">
               <li>
                 <strong> Encontros Formativos:</strong> realização de debates e atividades que promoveram a conscientização sobre a importância histórica dos quilombos, reforçando a identidade e o pertencimento.
               </li>
@@ -131,11 +131,11 @@ export default function ArquivoPage() {
             <h3 className="text-d-m font-bold pb-4">
             2. direitos quilombolas
             </h3>
-            <p className="text-d-s font-light">
+            <p className="text-d-s font-normal">
               Responsável: Julius Keniata Nokomo Alves Silva
               Voltado para a promoção e defesa dos direitos das comunidades, este eixo se articula por meio de:
             </p>
-            <ul className="list-disc list-inside text-d-s font-light pl-6 pb-8 space-y-6 mt-4">
+            <ul className="list-disc list-inside text-d-s font-normal pl-6 pb-8 space-y-6 mt-4">
               <li>
                 <strong>Oficinas Temáticas:</strong> divididas em cinco áreas (acesso à terra, infraestrutura e saúde, cultura, educação e cidadania), estas oficinas capacitaram as comunidades para o reconhecimento e a defesa de seus direitos.
               </li>
@@ -168,7 +168,7 @@ export default function ArquivoPage() {
           </div>
           <div>
     
-            <ul className="list-disc list-inside text-d-s font-light pl-6 pb-6 space-y-6 mt-4">
+            <ul className="list-disc list-inside text-d-s font-normal pl-6 pb-6 space-y-6 mt-4">
               <li>
                 <strong> Autonomia e Empoderamento:</strong>  ao fortalecer a identidade e a memória coletiva, o projeto estimulou a participação política e o protagonismo das comunidades na luta por seus direitos.
               </li>
@@ -184,11 +184,11 @@ export default function ArquivoPage() {
               
             </ul>
 
-            <p className="text-d-s font-light pb-6">
+            <p className="text-d-s font-normal pb-6">
                Esta iniciativa, apoiada pelo <strong>  Grupo Carrefour Brasil,</strong>
               reafirmou o compromisso com a promoção da justiça social e a valorização da cultura quilombola.
             </p>
-            <p className="text-d-s font-light pb-6">
+            <p className="text-d-s font-normal pb-6">
               Ao unir as dimensões do resgate histórico-cultural e da defesa dos direitos, o<strong> projeto “Memórias, Saberes e Direitos Quilombolas: A Resistência de um Povo!” </strong>
               transformou histórias de luta em instrumentos para a construção de um futuro mais justo e inclusivo
             </p>
