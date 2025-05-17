@@ -126,6 +126,7 @@ const RegisterForm: React.FC = () => {
           <CustomSelect
             name="accessTime"
             control={control}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             options={accessOptions as any[]}
             placeholder="prazo de acesso *"
             rules={{ required: "Selecione 30 ou 60 dias" }}
@@ -134,6 +135,7 @@ const RegisterForm: React.FC = () => {
           <CustomSelect
             name="registerType"
             control={control}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             options={registerTypes as any[]}
             placeholder="tipo de cadastro *"
             rules={{ required: "Selecione um tipo de cadastro" }}
