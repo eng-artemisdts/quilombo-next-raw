@@ -16,23 +16,39 @@ const AccessArchive: React.FC = () => {
   return (
     <section
       id="archive"
-      className="min-h-screen flex flex-col justify-center gap-6 px-8 py-16 bg-no-repeat"
+      className="
+        min-h-screen
+        flex flex-col justify-center gap-6
+        px-8 py-16
+
+        bg-no-repeat
+        bg-cover
+        bg-center
+
+        lg:[background-size:135%]
+        lg:[background-position:0_10%]
+      "
       style={{
         backgroundImage: "url('/assets/images/bg-arquivo.png')",
-        backgroundSize: "135%",
-        backgroundPosition: "0 10%",
       }}
     >
-      <AnimatedHeading className="w-1/2 text-[22px] capitalize">
-        Associação quilombola vila santa efigênia e adjacências (Embaúbas,
-        crasto e engenho queimado)
-      </AnimatedHeading>
+      <div className="flex sm:flex-col flex-col-reverse">
+        <AnimatedHeading className="w-full sm:w-1/2 text-[22px] capitalize sm:order-1">
+          Associação quilombola vila santa efigênia e adjacências (Embaúbas,
+          crasto e engenho queimado)
+        </AnimatedHeading>
 
-      <Image src={ArquivoLogo} alt="Arquivo" width={779} height={265} />
-
+        <Image
+          src={ArquivoLogo}
+          alt="Arquivo"
+          width={779}
+          height={265}
+          className="sm:order-2 mb-120 w-1/2 sm:mb-0 sm:w-[479px] md:w-[579px] lg:w-[779px]"
+        />
+      </div>
       <NavigateButton
         href="/acesso"
-        className="ml-8 w-[144px]"
+        className="ml-0 sm:ml-8 w-[144px] cursor-pointer"
         onClick={handleClick}
       >
         Entrar

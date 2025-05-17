@@ -45,16 +45,18 @@ export default function GoogleMaps({
   }
 
   return (
-    <GoogleMap
-      mapContainerStyle={{
-        width: width,
-        height: height,
-      }}
-      center={center}
-      zoom={zoom}
-      options={mapOptions}
-    >
-      <Marker position={center} />
-    </GoogleMap>
+    <div className="hidden sm:block">
+      <GoogleMap
+        mapContainerStyle={{
+          width: width,
+          height: height,
+        }}
+        center={center}
+        zoom={zoom}
+        options={mapOptions}
+      >
+        <Marker position={center} />
+      </GoogleMap>
+    </div>
   );
 }
