@@ -1,7 +1,8 @@
-import LoginForm from "./components/LoginForm";
-import LoginText from "./components/LoginText";
+"use client";
+import React from "react";
+import RegisterForm from "./components/RegisterForm";
 
-export default function ArquivoPage() {
+const CadastroPage: React.FC = () => {
   return (
     <div
       className="min-h-screen w-full px-[89px] py-[205px] max-xl:px-[3rem] flex justify-between"
@@ -11,8 +12,9 @@ export default function ArquivoPage() {
         backgroundPosition: "center",
       }}
     >
-      <LoginText />
-      <LoginForm />
+      <RegisterForm />
     </div>
   );
-}
+};
+
+export default CadastroPage;

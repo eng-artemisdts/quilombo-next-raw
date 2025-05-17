@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import AbsoluteIcon from "./components/AbsoluteIcon";
 import Carousel from "@/components/Carousel";

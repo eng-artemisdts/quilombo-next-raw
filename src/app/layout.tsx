@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "../components/Header";
 import { Poppins } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default async function HomeLayout({
       </head>
       <body className={poppins.className}>
         <Header />
+        <Toaster position="top-right" />
         {children}
       </body>
     </html>
