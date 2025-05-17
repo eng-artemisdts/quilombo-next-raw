@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import AbsoluteIcon from "./components/AbsoluteIcon";
 import Carousel from "@/components/Carousel";
 const images = [
   "/assets/imagesNicolinas/P1015887-2.jpg",
@@ -20,7 +18,7 @@ const Nicolinas: React.FC = () => {
       <div className="absolute inset-0 bg-green-500/86" />
       <div className=" 2xl:w-[1440px] w-full relative z-10 flex flex-row justify-items-start ">
         <div className="max-lg:hidden">
-          <AbsoluteIcon />
+        
         </div>
       </div>
       <div className="z-10 flex gap-7 max-lg:flex-col-reverse max-lg:gap-20 xl:px-10">
@@ -32,12 +30,15 @@ const Nicolinas: React.FC = () => {
             <h1 className="text-d-xl max-xl:text-m-xl font-bold">
               grupo de dança nicolinas
             </h1>
-            <button
+            <a
               type="button"
-              className="text-white bg-yellow-500 w-[150px] font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
+              className="flex justify-center text-white bg-yellow-500 w-[150px] font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
+              href="https://drive.google.com/file/d/1Fjf3bSZS4wvBAbQHq9iIUzmXNmvBCCxQ/view?usp=sharing "
+              target="_blank"
+              rel="noopener"
             >
               CONFIRA
-            </button>
+            </a>
           </div>
           <div className="flex flex-col font-light gap-8 max-lg:gap-5 text-d-s max-xl:text-m-s ">
             <p>

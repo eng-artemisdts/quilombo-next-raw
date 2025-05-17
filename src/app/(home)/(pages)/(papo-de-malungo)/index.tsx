@@ -42,23 +42,35 @@ const Podcast: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex">
-            <div>
-              <button
+          <div className="flex pt-10 gap-6">
+            <div className="flex flex-row items-center gap-2">
+              <div className="w-full md:w-[60px] h-[41px] relative">
+                <Image src="/assets/youtube.png" alt="Carrefour" fill/>
+              </div>
+              <a
                 type="button"
-                className="text-white bg-red-500 w-[150px] font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
+                className="text-white text-d-s bg-red-500 py-2 px-8 font-semibold rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
+                href="https://www.youtube.com/@quilombovilasantaefigenia"
+                target="_blank"
+                rel="noopener"
               >
                 YOUTUBE
-              </button>
+              </a>
             </div>
 
-            <div>
-              <button
+            <div className="flex flex-row items-center gap-2">
+              <div className="w-full md:w-[50px] h-[50px] relative">
+                <Image src="/assets/spotify.png" alt="Carrefour" fill/>
+              </div>
+              <a
                 type="button"
-                className="text-white bg-green-300 w-[150px] font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
+                className="text-white text-d-s bg-green-300 py-2 px-8 font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
+                href="https://open.spotify.com/show/0q2W5KlIgjG4oT7nkReGlM?si=0907fdf7e93a4bf4"
+                target="_blank"
+                rel="noopener"
               >
                 SPOTIFY
-              </button>
+              </a>
             </div>
           </div>
         </div>

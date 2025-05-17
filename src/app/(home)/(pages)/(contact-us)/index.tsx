@@ -7,21 +7,23 @@ import SocialMedia from "./components/SocialMedia";
 const ContactUs: React.FC = () => {
   return (
     <section
-      className="min-h-screen bg-red-500 flex px-[169px] py-[91px]"
+      className="min-h-screen bg-red-500 flex justify-center"
       id="contact"
     >
-      <div className="w-full">
-        <h2 className="text-[50px] font-bold tracking-tight text-white">
-          fale conosco
-        </h2>
+      <div className="flex gap-40 w-[1280px] justify-center items-center px-10">
+        <div className="w-full">
+          <h2 className="text-d-xl font-bold tracking-tight text-white">
+            fale conosco
+          </h2>
 
-        <div className="mt-4">
-          <ContactForm />
+          <div className="mt-4">
+            <ContactForm />
+          </div>
         </div>
-      </div>
-      <div>
-        <SocialMedia />
-        <GoogleMaps />
+        <div className="flex flex-col gap-4">
+          <SocialMedia />
+          <GoogleMaps />
+        </div>
       </div>
     </section>
   );

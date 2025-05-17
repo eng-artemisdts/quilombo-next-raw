@@ -59,19 +59,19 @@ const Research = () => {
 
   return (
     <div
-      className="min-h-screen flex-col min-w-full bg-[#F4AB0B] pb-30 "
+      className="min-h-screen flex-col min-w-full bg-[#F4AB0B] px-10 pb-30 "
       id="research"
     >
       <div className="flex flex-col justify-center items-center gap-[5rem]">
         {/* Header */}
-        <div className="flex w-full items-center justify-between xl:w-285 px-14">
-          <h1 className="font-bold text-[2.75rem] leading-[38px] text-green-500">
+        <div className="flex w-full items-center justify-between max-w-7xl">
+          <h1 className="font-bold text-m-xl leading-[38px] text-green-500">
             pesquisas
           </h1>
         </div>
 
         {/* Carousel */}
-        <div className="overflow-hidden w-full p-x-4 xl:w-285">
+        <div className="overflow-hidden w-full p-x-4 max-w-7xl">
           <div
             className="flex transition-transform duration-300 ease-in-out"
             style={{
@@ -81,7 +81,7 @@ const Research = () => {
             {Array.from({ length: totalSlides }).map((_, slideIndex) => (
               <div
                 key={slideIndex}
-                className="flex w-full shrink-0 gap-x-12 pl-[3rem] md:pl-[3rem]"
+                className="flex w-full max-md:w-500 shrink-0 gap-x-12 pl-[3rem] md:pl-[3rem]"
               >
                 {researchItems
                   .slice(

@@ -2,7 +2,6 @@
 
 import React from "react";
 import Card from "./components/Card";
-import AbsoluteIcons from "./components/AbsoluteIcons";
 import { useRouter } from "next/navigation";
 
 
@@ -25,17 +24,16 @@ const Projects: React.FC = () => {
   
   return (
     <section
-      className="w-full min-h-screen bg-white md:px-[8.5rem] px-[2rem] py-[5.4rem] sm:px-6 lg:px-8"
+      className="w-full flex justify-center min-h-screen bg-white md:px-[8.5rem] px-[2rem] py-[5.4rem] sm:px-6 lg:px-8"
       id="projects"
     >
-      <div className="max-w-6xl mx-auto relative">
+      <div className="max-w-7xl relative">
         {/* Section header */}
         <div className="flex">
-          <h2 className="text-3xl font-bold tracking-tight text-red-500 sm:text-4xl w-[10%]">
+          <h2 className="text-d-l font-bold tracking-tight leading-none text-red-500  w-[10%]">
             nossos projetos
           </h2>
 
-          <AbsoluteIcons />
         </div>
 
         {/* Cards grid */}
