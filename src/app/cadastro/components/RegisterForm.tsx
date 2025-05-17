@@ -3,37 +3,53 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Input from "./Input";
-import { Timestamp, addDoc, collection } from "firebase/firestore";
-import { db } from "@/lib/firebase/client";
+import CustomSelect from "./Select";
+import { UserRole } from "@/models/users";
+import { userService } from "@/services/user.service";
+import { downloadUserCredentials } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
-interface FormData {
-  username: string;
-  password: string;
+interface Option {
+  value: UserRole;
+  label: string;
 }
 
+interface FormData {
+  fullName: string;
+  email: string;
+  accessTime: string;
+  registerType: Option | null;
+}
+
+const registerTypes: Option[] = [
+  { value: UserRole.ADMIN, label: "Admin" },
+  { value: UserRole.NORMAL, label: "Normal" },
+];
+
 const RegisterForm: React.FC = () => {
-  const { register, handleSubmit } = useForm<FormData>();
+  const { register, handleSubmit, control } = useForm<FormData>({
+    defaultValues: {
+      fullName: "",
+      email: "",
+      accessTime: "",
+      registerType: null,
+    },
+  });
+  const router = useRouter();
 
-  const onSubmit: SubmitHandler<FormData> = async () => {
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
-      const data = {
-        fullName: "teste",
-        email: "teste@teste.com",
+      const userData = {
+        fullName: data.fullName,
+        email: data.email,
+        role: data.registerType?.value || UserRole.NORMAL,
         accessDeadline: new Date(),
-        registerType: "admin",
       };
-
-      debugger;
-
-      await addDoc(collection(db, "users"), {
-        ...data,
-        accessDeadline: Timestamp.fromDate(data.accessDeadline),
-        createdAt: Timestamp.now(),
-        updatedAt: Timestamp.now(),
-      });
-      alert("Usuário salvo!");
+      const user = await userService.registerUser(userData);
+      downloadUserCredentials(user.username, user.password as string);
+      return router.push("/acesso");
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 
@@ -55,7 +71,7 @@ const RegisterForm: React.FC = () => {
         <Input
           type="text"
           placeholder="nome completo *"
-          name="fullname"
+          name="fullName"
           register={register}
         />
         <Input
@@ -70,11 +86,13 @@ const RegisterForm: React.FC = () => {
           name="accessTime"
           register={register}
         />
-        <Input
-          type="text"
-          placeholder="tipo de cadastro (admin, normal) *"
+
+        <CustomSelect
           name="registerType"
-          register={register}
+          control={control}
+          options={registerTypes}
+          placeholder="tipo de cadastro *"
+          rules={{ required: "Selecione um tipo de cadastro" }}
         />
 
         <button

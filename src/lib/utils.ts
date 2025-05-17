@@ -15,3 +15,15 @@ export function scrollToSection(href: string) {
     element.scrollIntoView({ behavior: "smooth" });
   }
 };
+
+export function downloadUserCredentials(username: string, password: string) {
+  const element = document.createElement("a");
+  const file = new Blob([`Username: ${username}\nPassword: ${password}`], {
+    type: "text/plain",
+  });
+  element.href = URL.createObjectURL(file);
+  element.download = `${username}-acesso.txt`;
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+};

@@ -1,8 +1,9 @@
-import { initializeApp, getApps } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import { initializeApp } from "firebase/app";
 
-const firebaseConfig = {
+import { getFirestore, collection } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+
+const clientCredentials = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
@@ -11,6 +12,18 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-export const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
+const app = initializeApp(clientCredentials);
+
+const db = getFirestore(app);
+const storage = getStorage(app);
+
+
+
+const usersCollection = collection(db, "users");
+
+export {
+  app,
+  db,
+  storage,
+  usersCollection,
+};
