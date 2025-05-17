@@ -14,7 +14,7 @@ interface CarouselProps {
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
   return (
-    <div className="w-full max-sm:w-md max-w-[840px] mx-auto p-4">
+    <div className="w-full max-lg:w-md max-w-[840px] mx-auto p-4">
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={30}
