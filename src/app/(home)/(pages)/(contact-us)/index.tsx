@@ -10,7 +10,7 @@ const ContactUs: React.FC = () => {
       className="min-h-screen bg-red-500 flex justify-center"
       id="contact"
     >
-      <div className="flex flex-col-reverse lg:flex-row gap-40 w-[1280px] justify-center items-center px-10 py-30 lg:py-0">
+      <div className="flex flex-col-reverse md:flex-row gap-40 w-[1280px] justify-center items-center px-10 py-30 lg:py-0">
         <div className="w-full max-lg:w-fit">
           <h2 className="text-d-xl font-bold tracking-tight text-white">
             fale conosco

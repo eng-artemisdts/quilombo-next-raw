@@ -144,7 +144,7 @@ const RegisterForm: React.FC = () => {
 
         <button
           type="submit"
-          className="text-white text-[1.5rem] bg-red-500 font-semibold p-2 rounded-full hover:opacity-80 transition-opacity duration-300 uppercase mt-16 h-[51px] flex items-center justify-center"
+          className="text-white text-[1.5rem] bg-red-500 font-semibold p-2 rounded-full hover:opacity-80 transition-opacity duration-300 uppercase lg:mt-16 h-[51px] flex items-center justify-center"
           disabled={isLoading}
         >
           {isLoading ? (
