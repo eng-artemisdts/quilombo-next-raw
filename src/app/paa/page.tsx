@@ -7,7 +7,7 @@ export default function ArquivoPage() {
         <div className="border-2 border-green-500 rounded-2xl md:w-2/3 w-full p-8 text-green-500">
           
           <h1 className="text-d-xl max-lg:text-m-xl font-bold">
-            paa quilombola
+            PAA Quilombola
           </h1>
           <div className="flex flex-col text-d-s max-lg:text-m-s font-normal gap-6 py-8">
             <p>
@@ -16,7 +16,7 @@ export default function ArquivoPage() {
             
           </div>
           <h3 className="text-d-l max-lg:text-m-xl font-bold">
-            objetivos do paa quilombola
+            Objetivos do PAA Quilombola:
           </h3>
           <ul className="list-disc list-inside text-d-s max-lg:text-m-s font-normal space-y-6 pb-8 mt-4">
             <li>
@@ -62,7 +62,7 @@ export default function ArquivoPage() {
          
           <div className="pb-8">
             <h1 className="text-d-l max-lg:text-m-xl font-bold">
-            como funciona?
+            Como Funciona?
             </h1>
             <p className="text-d-s max-lg:text-m-s font-normal">
               O <strong> Programa de Aquisição de Alimentos (PAA)</strong> opera por meio da compra direta de alimentos produzidos por agricultores familiares, com ênfase em promover a produção sustentável e regional. No contexto quilombola, o PAA adota os seguintes princípios:
@@ -84,7 +84,7 @@ export default function ArquivoPage() {
           </div>
           <div>
             <h3 className="text-d-m max-lg:text-m-m font-bold pb-4">
-            quais são os benefícios?
+            Quais são os benefícios?
             </h3>
       
             <ul className="list-disc list-inside text-d-s max-lg:text-m-s font-normal pl-6 pb-8 space-y-6 mt-4">

@@ -6,14 +6,14 @@ export default function ArquivoPage() {
       <div className="flex flex-col lg:flex-row gap-8 max-lg:items-center justify-center">
         <div className="border-2 border-blue-500 rounded-2xl w-full p-8 text-blue-500">
           <h1 className="text-d-xl max-lg:text-m-xl font-light">
-            projeto:
+            Projeto:
           </h1>
           <h1 className="text-d-xl max-lg:text-m-xl font-bold">
-            “memórias, saberes e direitos resistência de um povo!”
+            “Memórias, Saberes e Direitos Quilombolas: a Resistência de um Povo!”
           </h1>
           <div className="flex flex-col text-d-s max-lg:text-m-s font-normal gap-6 py-8">
             <p>
-              O projeto <strong>“Memórias, Saberes e Direitos Quilombolas: a Resistência de um Povo!”</strong> é uma iniciativa inovadora que se insere no âmbito do edital de campanhas educativas do Grupo Carrefour Brasil.
+              O projeto <strong>“Memórias, Saberes e Direitos Quilombolas: a Resistência de um Povo!”</strong> é uma iniciativa inovadora que se insere no âmbito do edital de campanhas educativas do <strong> Grupo Carrefour Brasil.</strong>
             </p>
             <p>
               Com o firme propósito de combater o racismo e as diversas formas de opressão, a iniciativa visa fortalecer a identidade cultural das comunidades quilombolas de <strong>Vila Santa Efigênia, Embaúbas, Crasto e Engenho Queimado.</strong>
@@ -23,7 +23,7 @@ export default function ArquivoPage() {
             </p>
           </div>
           <h3 className="text-d-l max-lg:text-m-xl font-bold">
-            objetivos do projeto
+            Objetivos:
           </h3>
           <ul className="list-disc list-inside text-d-s max-lg:text-m-s font-normal space-y-6 mt-4">
             <li>
@@ -95,7 +95,7 @@ export default function ArquivoPage() {
          
           <div className="pb-8">
             <h1 className="text-d-l max-lg:text-m-xl font-bold">
-            estrutura do projeto
+            Estrutura:
             </h1>
             <p className="text-d-s max-lg:text-m-s font-normal">
               O projeto é dividido em dois eixos que se complementam e se reforçam:
@@ -163,7 +163,7 @@ export default function ArquivoPage() {
          
           <div className="pb-6">
             <h1 className="text-d-l max-lg:text-m-xl font-bold">
-            resultados e impactos
+            Resultados e Impactos:
             </h1>
           </div>
           <div>

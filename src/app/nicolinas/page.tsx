@@ -9,7 +9,7 @@ export default function ArquivoPage() {
           <div className="border-2 border-green-500 rounded-2xl md:w-2/3 w-full p-8 text-green-500">
             
             <h1 className="text-d-xl max-lg:text-m-xl font-bold">
-              projeto com o grupo de dança nicolinas
+              Projeto com o grupo de dança Nicolinas
             </h1>
             <div className="flex flex-col text-d-s max-lg:text-m-s font-normal gap-6 pb-8">
               <p>
@@ -19,7 +19,7 @@ export default function ArquivoPage() {
               
             </div>
             <h3 className="text-d-l max-lg:text-m-xl font-bold">
-              objetivos do projeto
+              Objetivos:
             </h3>
             <ul className="list-disc list-inside text-d-s max-lg:text-m-s font-normal space-y-6 pb-8 mt-4">
               <li>
@@ -62,7 +62,7 @@ export default function ArquivoPage() {
           
             <div className="pb-8">
               <h1 className="text-d-l max-lg:text-m-xl font-bold">
-              oficineiras(os)
+              Oficineiras(os)
               </h1>
               <p className="text-d-s max-lg:text-m-s font-normal">
                 As oficinas e atividades são conduzidas por profissionais de grande experiência e reconhecimento na valorização da cultura afro:
@@ -84,7 +84,7 @@ export default function ArquivoPage() {
             </div>
             <div>
               <h3 className="text-d-l max-lg:text-m-xl font-bold">
-              coordenação
+              Coordenação
               </h3>
               <div className="flex flex-col gap text-d-s max-lg:text-m-s font-normal gap-8">
                 <p>

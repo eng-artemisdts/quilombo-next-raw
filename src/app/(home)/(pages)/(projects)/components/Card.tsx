@@ -12,9 +12,9 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({image, title, description, buttonText, handleClick }) => {
   return (
-    <div className="bg-white p-6 flex flex-col justify-center gap-2flex flex-col items-center ">
+    <div className="bg-white p-6 flex  gap-2flex flex-col items-center ">
       <div className="max-w-md ">
-        <div className="w-full h-[290px] relative">
+        <div className="w-full border-4 mb-4 h-[290px] relative">
           <Image src={image} alt="Carrefour" fill />
         </div>
         <h3 className="text-xl font-semibold mb-2">{title}</h3>

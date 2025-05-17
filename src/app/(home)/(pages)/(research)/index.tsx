@@ -61,12 +61,13 @@ const Research: React.FC = () => {
   return (
     <section
       id="research"
-      className="bg-[#F4AB0B] px-6 py-12 flex flex-col items-center"
+      className="bg-[#F4AB0B] px-6  flex flex-col items-center"
     >
-      <h2 className="text-green-500 text-2xl font-bold mb-8 uppercase">
-        pesquisas
-      </h2>
-
+      <div className="flex w-full items-start max-lg:w-fit">
+        <h2 className="text-green-500 text-d-l max-lg:text-d-m font-bold mb-8 ">
+          Pesquisas:
+        </h2>
+      </div>
       <div className="w-full max-w-7xl">
         <Carousel
           items={researchItems}

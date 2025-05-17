@@ -13,7 +13,7 @@ const Protocol = () => {
           <div className="flex flex-col items-center gap-5 font-light">
             <div className="p-5 w-full pb-10 border-2 rounded-2xl border-white">
               <h1 className="max-lg:text-m-xl text-d-xl font-bold mb-5">
-                protocolo de consulta
+                Protocolo de Consulta
               </h1>
               <div className="max-lg:text-m-s text-d-s flex flex-col gap-7">
                 <p>
@@ -58,7 +58,7 @@ const Protocol = () => {
           <div className="flex flex-col items-center gap-5 font-light">
             <div className="p-5 w-full pb-10 border-2 rounded-2xl border-white">
               <h1 className="max-lg:text-m-xl text-d-xl font-bold mb-5">
-                consulta livre, prévia e informada
+                Consulta Livre, Prévia e Informada
               </h1>
               <div className="max-lg:text-m-s text-d-s flex flex-col gap-7">
                 <p>

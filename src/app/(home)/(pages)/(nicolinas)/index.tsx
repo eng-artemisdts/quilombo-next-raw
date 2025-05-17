@@ -28,7 +28,7 @@ const Nicolinas: React.FC = () => {
         <div className="relative z-10 flex flex-col w-full items-start justify-center text-white gap-10 lg:w-lg">
           <div className="flex flex-col max-lg:w-100 items-start">
             <h1 className="text-d-xl max-xl:text-m-xl font-bold">
-              grupo de dança nicolinas
+              Grupo de Dança Nicolinas
             </h1>
             <a
               type="button"
