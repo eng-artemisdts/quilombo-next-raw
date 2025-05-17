@@ -87,13 +87,13 @@ const RegisterForm: React.FC = () => {
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 0.8, duration: 0.7, ease: "easeOut" }}
     >
-      <h2 className="text-white font-poppins text-[50px] font-bold leading-[57px] mb-4 uppercase">
+      <h2 className="text-white font-poppins text-[50px] font-bold leading-[57px]  uppercase">
         Cadastro
       </h2>
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col gap-4 mt-18"
+        className="flex flex-col gap-4 mt-8"
       >
         <Input
           type="text"
@@ -122,25 +122,27 @@ const RegisterForm: React.FC = () => {
           error={errors.email?.message}
         />
 
-        <CustomSelect
-          name="accessTime"
-          control={control}
-          options={accessOptions as any[]}
-          placeholder="prazo de acesso *"
-          rules={{ required: "Selecione 30 ou 60 dias" }}
-        />
+        <div className="flex gap-2">
+          <CustomSelect
+            name="accessTime"
+            control={control}
+            options={accessOptions as any[]}
+            placeholder="prazo de acesso *"
+            rules={{ required: "Selecione 30 ou 60 dias" }}
+          />
 
-        <CustomSelect
-          name="registerType"
-          control={control}
-          options={registerTypes as any[]}
-          placeholder="tipo de cadastro *"
-          rules={{ required: "Selecione um tipo de cadastro" }}
-        />
+          <CustomSelect
+            name="registerType"
+            control={control}
+            options={registerTypes as any[]}
+            placeholder="tipo de cadastro *"
+            rules={{ required: "Selecione um tipo de cadastro" }}
+          />
+        </div>
 
         <button
           type="submit"
-          className="text-white text-[1.5rem] bg-red-500 font-semibold p-2 rounded-full hover:opacity-80 transition-opacity duration-300 uppercase mt-18 h-[51px] flex items-center justify-center"
+          className="text-white text-[1.5rem] bg-red-500 font-semibold p-2 rounded-full hover:opacity-80 transition-opacity duration-300 uppercase mt-16 h-[51px] flex items-center justify-center"
           disabled={isLoading}
         >
           {isLoading ? (

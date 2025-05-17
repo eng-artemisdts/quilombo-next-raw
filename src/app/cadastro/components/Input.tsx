@@ -1,3 +1,4 @@
+// components/Input.tsx
 import React from "react";
 import { UseFormRegister, RegisterOptions } from "react-hook-form";
 
@@ -5,7 +6,6 @@ interface InputProps {
   type: string;
   placeholder: string;
   name: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   register: UseFormRegister<any>;
   validation?: RegisterOptions;
   error?: string;
@@ -28,7 +28,7 @@ const Input: React.FC<InputProps> = ({
       {...register(name, validation)}
       className="py-[10px] px-[16px] rounded-full bg-white-rgba text-white placeholder:text-white focus:outline-none w-full"
     />
-    <p className="h-5 mt-1 text-sm text-red-rgba">{error ?? "\u00A0"}</p>
+    {error && <p className="mt-1 text-sm text-red-rgba">{error}</p>}
   </div>
 );
 

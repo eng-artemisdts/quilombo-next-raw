@@ -104,7 +104,7 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
         classNamePrefix="custom-select"
         {...selectProps}
       />
-      {error && <p className="mt-1 text-sm text-red-rgba">{error.message}</p>}
+      {error && <p className="mt-1 text-sm text-red-500">{error.message}</p>}
     </div>
   );
 };
