@@ -10,7 +10,7 @@ const researchItems = [
     description:
       "patrimônio e educação quilombola em Mariana (Minas Gerais); uma análise transceular",
     author: "Vittor Policarpo S. Martins",
-    imageUrl: "MONOGRAFIA_BatuquesSilêncioPatrimônio.pdf",
+    imageUrl: "monografia-vittor.pdf",
     linkUrl: "https://monografias.ufop.br/handle/35400000/5829",
   },
   {
@@ -18,7 +18,7 @@ const researchItems = [
     description:
       "interlocuções promovidas entre os saberes populares envolvidos na produção de doces por moradoras de uma comunidade Quilombola e a Educação Química",
     author: "Cristian Júnior Damasceno",
-    imageUrl: "DISSERTAÇÃO_SabedoriaInterlocuçõesPromovidas.pdf",
+    imageUrl: "sabedoria.pdf",
     linkUrl:
       "https://www.repositorio.ufop.br/items/68f71f2b-a3ad-439d-b699-1866c7a0ff41",
   },
