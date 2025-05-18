@@ -2,18 +2,18 @@ import Image from "next/image";
 
 export default function ArquivoPage() {
   return (
-    <div className="flex flex-col max-w-7xl py-30 container mx-auto gap-20">
-      <div className="flex flex-col md:flex-row gap-8 justify-center">
-        <div className="border-2 border-blue-500 rounded-2xl md:w-2/3 w-full p-8 text-blue-500">
-          <h1 className="text-d-xl font-light">
-            projeto:
+    <div className="flex flex-col max-w-7xl px-10 py-30 container mx-auto gap-20">
+      <div className="flex flex-col lg:flex-row gap-8 max-lg:items-center justify-center">
+        <div className="border-2 border-blue-500 rounded-2xl w-full p-8 text-blue-500">
+          <h1 className="text-d-xl max-lg:text-m-xl font-light">
+            Projeto:
           </h1>
-          <h1 className="text-d-xl font-bold">
-            “memórias, saberes e direitos resistência de um povo!”
+          <h1 className="text-d-xl max-lg:text-m-xl font-bold">
+            “Memórias, Saberes e Direitos Quilombolas: a Resistência de um Povo!”
           </h1>
-          <div className="flex flex-col text-d-s font-normal gap-6 py-8">
+          <div className="flex flex-col text-d-s max-lg:text-m-s font-normal gap-6 py-8">
             <p>
-              O projeto <strong>“Memórias, Saberes e Direitos Quilombolas: a Resistência de um Povo!”</strong> é uma iniciativa inovadora que se insere no âmbito do edital de campanhas educativas do Grupo Carrefour Brasil.
+              O projeto <strong>“Memórias, Saberes e Direitos Quilombolas: a Resistência de um Povo!”</strong> é uma iniciativa inovadora que se insere no âmbito do edital de campanhas educativas do <strong> Grupo Carrefour Brasil.</strong>
             </p>
             <p>
               Com o firme propósito de combater o racismo e as diversas formas de opressão, a iniciativa visa fortalecer a identidade cultural das comunidades quilombolas de <strong>Vila Santa Efigênia, Embaúbas, Crasto e Engenho Queimado.</strong>
@@ -22,10 +22,10 @@ export default function ArquivoPage() {
               Ao promover o resgate dos saberes ancestrais e o acesso a informações jurídicas e políticas públicas, o projeto articula ações que valorizam tanto a memória quanto os direitos dessas comunidades.
             </p>
           </div>
-          <h3 className="text-d-l font-bold">
-            objetivos do projeto
+          <h3 className="text-d-l max-lg:text-m-xl font-bold">
+            Objetivos:
           </h3>
-          <ul className="list-disc list-inside text-d-s font-normal space-y-6 mt-4">
+          <ul className="list-disc list-inside text-d-s max-lg:text-m-s font-normal space-y-6 mt-4">
             <li>
               <strong>Fortalecimento da Identidade Cultural:</strong> resgatar e preservar as tradições, práticas culturais e histórias das comunidades quilombolas, garantindo que os saberes ancestrais sejam passados às futuras gerações.
             </li>
@@ -46,8 +46,8 @@ export default function ArquivoPage() {
               <Image src="/assets/images/MAR2025byAIDIAX-8.jpg" alt="Carrefour" fill 
               className="object-cover object-[40%_100%] rounded-2xl"/>
             </div>
-            <p className="text-blue-500 text-d-s w-full md:w-[477px] pt-12 ">
-              <strong>Equipe:</strong>
+            <p className="text-blue-500 text-d-s max-lg:text-m-s w-full md:w-[477px] pt-12 ">
+              <strong>Equipe: </strong>
               Coordenação Geral: Thatiele Monic Estevão
               Coordenação Administrativa: Michelle de Fátima Estevão
               Eixo “Memórias e Saberes Tradicionais”: Vittor Policarpo Souza Martins
@@ -57,11 +57,11 @@ export default function ArquivoPage() {
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <div className="w-full md:w-[477px] md:h-[200px] relative">
+            <div className="w-full max-sm:w-[477px] sm:w-[477px] max-sm:h-[150px] sm:h-[150px] relative">
               <Image src="/assets/carrefour.png" alt="Carrefour" fill 
               className="object-contain "/>
             </div>
-            <p className="text-blue-500 text-d-s font-light">
+            <p className="text-blue-500 max-lg:text-center text-d-s max-lg:text-m-s max-lg:px-10 font-light">
               Projeto financiado pelo Grupo Carrefour Brasil
               Edital Campanhas Educativas 2024
             </p>
@@ -75,11 +75,11 @@ export default function ArquivoPage() {
               className="object-cover object-[100%_50%] rounded-2xl"/>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-8 justify-between">
+      <div className="flex flex-col lg:flex-row gap-8 max-lg:items-center justify-between">
         
         <div className="flex flex-col gap-20">
 
-          <div className="w-full md:w-[477px] md:h-[300px] relative">
+          <div className="w-full max-sm:w-[477px] sm:w-[477px] max-sm:h-[300px] sm:h-[300px] relative">
             <Image src="/assets/passaroSankofa.png" alt="passaro" fill 
             className="object-contain object-[40%_100%] rounded-2xl"/>
           </div>
@@ -91,25 +91,25 @@ export default function ArquivoPage() {
             
          
         </div>
-        <div className="border-2 border-blue-500 rounded-2xl md:w-2/3 w-full p-8 text-blue-500">
+        <div className="border-2 border-blue-500 rounded-2xl w-full p-8 text-blue-500">
          
           <div className="pb-8">
-            <h1 className="text-d-l font-bold">
-            estrutura do projeto
+            <h1 className="text-d-l max-lg:text-m-xl font-bold">
+            Estrutura:
             </h1>
-            <p className="text-d-s font-normal">
+            <p className="text-d-s max-lg:text-m-s font-normal">
               O projeto é dividido em dois eixos que se complementam e se reforçam:
             </p>
           </div>
           <div>
-            <h3 className="text-d-m font-bold pb-4">
+            <h3 className="text-d-m max-lg:text-m-m font-bold pb-4">
               1. memórias e saberes tradicionais
             </h3>
-            <p className="text-d-s font-normal">
+            <p className="text-d-s max-lg:text-m-s font-normal">
               Responsável: <strong> Vittor Policarpo Souza Martins</strong>
               Este eixo tem como foco a preservação e valorização daw memórias e dos saberes das comunidades, estruturado em cinco etapas:
             </p>
-            <ul className="list-disc list-inside text-d-s font-normal pl-6 pb-6 space-y-6 mt-4">
+            <ul className="list-disc list-inside text-d-s max-lg:text-m-s font-normal pl-6 pb-6 space-y-6 mt-4">
               <li>
                 <strong> Encontros Formativos:</strong> realização de debates e atividades que promoveram a conscientização sobre a importância histórica dos quilombos, reforçando a identidade e o pertencimento.
               </li>
@@ -128,14 +128,14 @@ export default function ArquivoPage() {
             </ul>
           </div>
           <div>
-            <h3 className="text-d-m font-bold pb-4">
+            <h3 className="text-d-m max-lg:text-m-m font-bold pb-4">
             2. direitos quilombolas
             </h3>
-            <p className="text-d-s font-normal">
+            <p className="text-d-s max-lg:text-m-s font-normal">
               Responsável: Julius Keniata Nokomo Alves Silva
               Voltado para a promoção e defesa dos direitos das comunidades, este eixo se articula por meio de:
             </p>
-            <ul className="list-disc list-inside text-d-s font-normal pl-6 pb-8 space-y-6 mt-4">
+            <ul className="list-disc list-inside text-d-s max-lg:text-m-s font-normal pl-6 pb-8 space-y-6 mt-4">
               <li>
                 <strong>Oficinas Temáticas:</strong> divididas em cinco áreas (acesso à terra, infraestrutura e saúde, cultura, educação e cidadania), estas oficinas capacitaram as comunidades para o reconhecimento e a defesa de seus direitos.
               </li>
@@ -156,19 +156,19 @@ export default function ArquivoPage() {
               className="object-cover object-[100%_35%] rounded-2xl"/>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-8 justify-between">
+      <div className="flex flex-col lg:flex-row gap-8 max-lg:items-center justify-between">
         
         
-        <div className="border-2 border-blue-500 rounded-2xl md:w-2/3 w-full p-8 text-blue-500">
+        <div className="border-2 border-blue-500 rounded-2xl w-full p-8 text-blue-500">
          
           <div className="pb-6">
-            <h1 className="text-d-l font-bold">
-            resultados e impactos
+            <h1 className="text-d-l max-lg:text-m-xl font-bold">
+            Resultados e Impactos:
             </h1>
           </div>
           <div>
     
-            <ul className="list-disc list-inside text-d-s font-normal pl-6 pb-6 space-y-6 mt-4">
+            <ul className="list-disc list-inside text-d-s max-lg:text-m-s font-normal pl-6 pb-6 space-y-6 mt-4">
               <li>
                 <strong> Autonomia e Empoderamento:</strong>  ao fortalecer a identidade e a memória coletiva, o projeto estimulou a participação política e o protagonismo das comunidades na luta por seus direitos.
               </li>
@@ -184,11 +184,11 @@ export default function ArquivoPage() {
               
             </ul>
 
-            <p className="text-d-s font-normal pb-6">
+            <p className="text-d-s max-lg:text-m-s font-normal pb-6">
                Esta iniciativa, apoiada pelo <strong>  Grupo Carrefour Brasil,</strong>
               reafirmou o compromisso com a promoção da justiça social e a valorização da cultura quilombola.
             </p>
-            <p className="text-d-s font-normal pb-6">
+            <p className="text-d-s max-lg:text-m-s font-normal pb-6">
               Ao unir as dimensões do resgate histórico-cultural e da defesa dos direitos, o<strong> projeto “Memórias, Saberes e Direitos Quilombolas: A Resistência de um Povo!” </strong>
               transformou histórias de luta em instrumentos para a construção de um futuro mais justo e inclusivo
             </p>
@@ -198,7 +198,7 @@ export default function ArquivoPage() {
 
         <div className="flex flex-col gap-20 justify-end">
           
-          <div className="w-full md:w-[477px] h-[759px]  relative">
+          <div className="w-full max-sm:w-[477px] sm:w-[477px] max-sm:h-[759px] sm:h-[759px]  relative">
             <Image src="/assets/images/DSCF3601.jpg" alt="Carrefour" fill 
             className="object-cover object-[20%_100%] rounded-2xl"/>
           </div>

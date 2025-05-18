@@ -38,7 +38,8 @@ const Podcast: React.FC = () => {
               integra as ações da Associação Quilombola Vila Santa Efigênia e
               Adjacências. Cada episódio é um espaço de troca, memória e
               valorização das histórias e saberes das comunidades quilombolas.
-              Ouça!
+              <br />
+              <strong>Ouça!</strong>
             </p>
           </div>
 

@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import NavLink from "./NavLink";
-import { FaSearch } from "react-icons/fa";
-import { FiGlobe } from "react-icons/fi";
 import { HiMenu, HiX } from "react-icons/hi";
 import Logo from "@public/assets/logo.svg";
 import { scrollToSection } from "@/lib/utils";
@@ -106,12 +104,6 @@ const Header: React.FC<HeaderProps> = ({ isAdminContext = false }) => {
                 onClick={() => handleClick(item)}
               />
             ))}
-            <button className="px-4 py-2 rounded hover:bg-[#F4AB0B] transition-colors">
-              <FaSearch />
-            </button>
-            <button className="px-4 py-2 rounded hover:bg-[#F4AB0B] transition-colors">
-              <FiGlobe />
-            </button>
           </div>
 
           {/* mobile toggle */}
@@ -135,14 +127,7 @@ const Header: React.FC<HeaderProps> = ({ isAdminContext = false }) => {
                 onClick={() => handleClick(item)}
               />
             ))}
-            <div className="flex items-center space-x-2 px-4">
-              <button className="px-4 py-2 rounded hover:bg-[#F4AB0B] transition-colors">
-                <FaSearch />
-              </button>
-              <button className="px-4 py-2 rounded hover:bg-[#F4AB0B] transition-colors">
-                <FiGlobe />
-              </button>
-            </div>
+            <div className="flex items-center space-x-2 px-4"></div>
           </div>
         </div>
       )}

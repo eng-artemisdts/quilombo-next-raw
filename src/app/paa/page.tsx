@@ -2,23 +2,23 @@ import Image from "next/image";
 
 export default function ArquivoPage() {
   return (
-    <div className="flex flex-col py-30 container mx-auto gap-20 max-w-7xl">
-      <div className="flex flex-col md:flex-row gap-8 justify-center">
+    <div className="flex flex-col py-30 px-10 container mx-auto gap-20 max-w-7xl">
+      <div className="flex flex-col lg:flex-row gap-8 max-lg:items-center justify-center">
         <div className="border-2 border-green-500 rounded-2xl md:w-2/3 w-full p-8 text-green-500">
           
-          <h1 className="text-d-xl font-bold">
-            paa quilombola
+          <h1 className="text-d-xl max-lg:text-m-xl font-bold">
+            PAA Quilombola
           </h1>
-          <div className="flex flex-col text-d-s font-normal gap-6 py-8">
+          <div className="flex flex-col text-d-s max-lg:text-m-s font-normal gap-6 py-8">
             <p>
               A <strong> Associação Quilombola Vila Santa Efigênia e Adjacências</strong> tem o orgulho de anunciar seu acesso ao <strong>Programa de Aquisição de Alimentos (PAA),</strong> uma iniciativa do governo que visa promover a agricultura familiar quilombola e fortalecer a segurança alimentar.
             </p>
             
           </div>
-          <h3 className="text-d-l font-bold">
-            objetivos do paa quilombola
+          <h3 className="text-d-l max-lg:text-m-xl font-bold">
+            Objetivos do PAA Quilombola:
           </h3>
-          <ul className="list-disc list-inside text-d-s font-normal space-y-6 pb-8 mt-4">
+          <ul className="list-disc list-inside text-d-s max-lg:text-m-s font-normal space-y-6 pb-8 mt-4">
             <li>
               <strong>Fortalecimento da Agricultura Familiar Quilombola: </strong> incentivar a produção local e sustentável, valorizando os métodos tradicionais e os saberes ancestrais dos agricultores quilombolas.
             </li>
@@ -46,11 +46,11 @@ export default function ArquivoPage() {
               className="object-cover object-[100%_50%] rounded-2xl"/>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-8 items-end">
+      <div className="flex flex-col lg:flex-row max-lg:items-center gap-8 items-end">
         
         <div className="flex flex-col pb-10">
 
-          <div className="w-full md:w-[477px] md:h-[600px] relative">
+          <div className="w-full md:w-[477px] md:h-[600px] max-lg:hidden relative">
             <Image src="/assets/icons/folha.svg" alt="passaro" fill 
             className="object-contain object-[40%_100%] rounded-2xl"/>
           </div>
@@ -61,15 +61,15 @@ export default function ArquivoPage() {
         <div className="border-2 border-green-500 rounded-2xl md:w-2/3 w-full p-8 text-green-500">
          
           <div className="pb-8">
-            <h1 className="text-d-l font-bold">
-            como funciona?
+            <h1 className="text-d-l max-lg:text-m-xl font-bold">
+            Como Funciona?
             </h1>
-            <p className="text-d-s font-normal">
+            <p className="text-d-s max-lg:text-m-s font-normal">
               O <strong> Programa de Aquisição de Alimentos (PAA)</strong> opera por meio da compra direta de alimentos produzidos por agricultores familiares, com ênfase em promover a produção sustentável e regional. No contexto quilombola, o PAA adota os seguintes princípios:
             </p>
           </div>
           <div>
-            <ul className="list-disc list-inside text-d-s font-normal pl-6 pb-6 space-y-6 mt-4">
+            <ul className="list-disc list-inside text-d-s max-lg:text-m-s font-normal pl-6 pb-6 space-y-6 mt-4">
               <li>
                 <strong> Produção Tradicional: </strong>incentiva o cultivo de alimentos tradicionais, respeitando as técnicas e práticas que fazem parte do legado cultural das comunidades.
               </li>
@@ -83,11 +83,11 @@ export default function ArquivoPage() {
             </ul>
           </div>
           <div>
-            <h3 className="text-d-m font-bold pb-4">
-            quais são os benefícios?
+            <h3 className="text-d-m max-lg:text-m-m font-bold pb-4">
+            Quais são os benefícios?
             </h3>
       
-            <ul className="list-disc list-inside text-d-s font-normal pl-6 pb-8 space-y-6 mt-4">
+            <ul className="list-disc list-inside text-d-s max-lg:text-m-s font-normal pl-6 pb-8 space-y-6 mt-4">
               <li>
                 <strong>Reconhecimento e Valorização Cultural:</strong> ao integrar os produtores quilombolas ao PAA, reforçamos a importância dos conhecimentos e práticas tradicionais, contribuindo para o reconhecimento da identidade e da história dessas comunidades.
               </li>
