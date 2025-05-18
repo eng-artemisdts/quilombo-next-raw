@@ -10,50 +10,33 @@ const researchItems = [
     description:
       "patrimônio e educação quilombola em Mariana (Minas Gerais); uma análise transceular",
     author: "Vittor Policarpo S. Martins",
-    imageUrl: "/assets/research.png",
+    imageUrl: "MONOGRAFIA_BatuquesSilêncioPatrimônio.pdf",
+    linkUrl: "https://monografias.ufop.br/handle/35400000/5829",
   },
   {
     title: "“Sabedoria nunca é muita”",
     description:
       "interlocuções promovidas entre os saberes populares envolvidos na produção de doces por moradoras de uma comunidade Quilombola e a Educação Química",
     author: "Cristian Júnior Damasceno",
-    imageUrl: "/assets/research.png",
+    imageUrl: "DISSERTAÇÃO_SabedoriaInterlocuçõesPromovidas.pdf",
+    linkUrl:
+      "https://www.repositorio.ufop.br/items/68f71f2b-a3ad-439d-b699-1866c7a0ff41",
   },
   {
-    title: "“Pesquisa 3”",
-    description: "descrição da pesquisa 3",
-    author: "Autor 3",
-    imageUrl: "/assets/research.png",
+    title: "“Rede de Trocas de Semente e Consevação da Agrobiodiversidade”",
+    description:
+      "um estudo em comunidades tradicionais quilombolas no município de Mariana, Minas Gerais",
+    author: "Isabella Fernandes Fantini",
+    imageUrl: "isabellafernandesfantini.pdf",
+    linkUrl: "https://repositorio.ufjf.br/jspui/handle/ufjf/15977",
   },
   {
-    title: "“Pesquisa 4”",
-    description: "descrição da pesquisa 4",
-    author: "Autor 4",
-    imageUrl: "/assets/research.png",
-  },
-  {
-    title: "“Pesquisa 5”",
-    description: "descrição da pesquisa 5",
-    author: "Autor 5",
-    imageUrl: "/assets/research.png",
-  },
-  {
-    title: "“Pesquisa 6”",
-    description: "descrição da pesquisa 6",
-    author: "Autor 6",
-    imageUrl: "/assets/research.png",
-  },
-  {
-    title: "“Pesquisa 7”",
-    description: "descrição da pesquisa 7",
-    author: "Autor 7",
-    imageUrl: "/assets/research.png",
-  },
-  {
-    title: "“Pesquisa 8”",
-    description: "descrição da pesquisa 8",
-    author: "Autor 8",
-    imageUrl: "/assets/research.png",
+    title: "“História oral, territorialidades e identidades quilombolas”",
+    description: "Furquim, Mariana, Minas Gerais",
+    author: "Leonam Maxney Carvalho",
+    imageUrl: "hugoquinta,+Gerente+da+revista,+5+-+1281.pdf",
+    linkUrl:
+      "https://seer.assis.unesp.br/index.php/facesdahistoria/article/view/1281",
   },
 ];
 
@@ -61,7 +44,7 @@ const Research: React.FC = () => {
   return (
     <section
       id="research"
-      className="bg-[#F4AB0B] px-6  flex flex-col items-center"
+      className="bg-[#F4AB0B] px-6 py-12  flex flex-col items-center"
     >
       <div className="flex w-full items-start max-lg:w-fit">
         <h2 className="text-green-500 text-d-l max-lg:text-d-m font-bold mb-8 ">
@@ -72,7 +55,7 @@ const Research: React.FC = () => {
         <Carousel
           items={researchItems}
           renderItem={(item) => (
-            <div className=" flex justify-center">
+            <div className="flex justify-center lg:pl-5">
               <ResearchItem {...item} />
             </div>
           )}

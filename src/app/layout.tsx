@@ -22,6 +22,7 @@ export default function RootLayout({
           name="description"
           content="Associacao Quilombolas Vila Santa Efigenia"
         />
+        <link rel="icon" href="/assets/favicon.ico" />
       </head>
       <body className={poppins.className}>
         <AppHeader />
