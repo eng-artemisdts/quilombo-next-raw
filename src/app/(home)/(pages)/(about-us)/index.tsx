@@ -11,23 +11,15 @@ const AboutUs = () => {
           <h1 className="font-poppins font-bold text-[50px] leading-[57px] text-green-500">
             Sobre nós
           </h1>
-          <div className="text-green-500 mt-3 max-w-md mx-auto text-base sm:text-lg md:mt-5 md:text-xl md:max-w-3xl min-w-[20rem]">
+          <div className=" flex flex-col gap-6 text-green-500 mt-3 max-w-md mx-auto text-base sm:text-lg md:mt-5 md:text-xl md:max-w-3xl min-w-[20rem]">
             <p>
-              Somos os povos quilombolas das comunidades de <strong>Vila Santa Efigênia,
-              Embaúbas, Crasto e Engenho Queimado,</strong> localizadas próximas a
-              Furquim, distrito de Mariana, Minas Gerais.
+              Somos os povos quilombolas das comunidades de <strong>Vila Santa Efigênia, Engenho Queimado, Embaúbas e Crasto,</strong> localizadas próximas a Furquim, distrito de Mariana, Minas Gerais.
             </p>
             <p>
-              Juntos, formamos a <strong>Associação Quilombola Vila Santa Efigênia e
-              Adjacências,</strong> criada em 2019. A associação desempenha um papel
-              crucial na organização das comunidades, promovendo a autoafirmação
-              identitária e defendendo os direitos dos quilombolas.
+              Juntos, formamos a <strong>Associação Quilombola Vila Santa Efigênia e Adjacências,</strong> criada em 2019. A associação desempenha um papel crucial na organização das comunidades, promovendo a autoafirmação identitária e defendendo os direitos dos quilombolas
             </p>
             <p>
-              Nossa presença na região remonta ao século XVIII, onde quilombos
-              foram formados por africanos que fugiram das senzalas e resistiram
-              ao sistema escravocrata, criando espaços solidários de liberdade e
-              preservação cultural.
+              Nossa presença na região remonta ao século XVIII, onde quilombos foram formados por africanos que fugiram das senzalas e resistiram ao sistema escravocrata, criando espaços solidários de liberdade e preservação cultural. 
             </p>
             <p>
               <strong>“Eu sou porque nós somos!”</strong>

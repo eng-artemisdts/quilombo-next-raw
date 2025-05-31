@@ -30,15 +30,18 @@ const Nicolinas: React.FC = () => {
             <h1 className="text-d-xl max-xl:text-m-xl font-bold">
               Grupo de Dança Nicolinas
             </h1>
-            <a
-              type="button"
-              className="flex justify-center text-white bg-yellow-500 w-[150px] font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
-              href="https://drive.google.com/file/d/1Fjf3bSZS4wvBAbQHq9iIUzmXNmvBCCxQ/view?usp=sharing "
-              target="_blank"
-              rel="noopener"
-            >
-              CONFIRA
-            </a>
+            <div className="max-w-[280px]">
+
+              <a
+                type="button"
+                className="flex justify-center text-white bg-yellow-500 w-full font-semibold rounded-full py-2 px-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"
+                href="https://drive.google.com/file/d/1Fjf3bSZS4wvBAbQHq9iIUzmXNmvBCCxQ/view?usp=sharing "
+                target="_blank"
+                rel="noopener"
+              >
+                ACESSE O PORTIFÓLIO
+              </a>
+            </div>
           </div>
           <div className="flex flex-col font-light gap-8 max-lg:gap-5 text-d-s max-xl:text-m-s ">
             <p>

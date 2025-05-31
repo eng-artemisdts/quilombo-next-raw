@@ -3,11 +3,16 @@ import Image from "next/image";
 import React from "react";
 
 const images = [
-  "/assets/imagesPodcast/Oficina_Quilombolas_18_08_24-2.jpg",
-  "/assets/imagesPodcast/FEV2025-byAIDIAX-71.jpg",
-  "/assets/imagesPodcast/FEV2025-byAIDIAX-68.jpg",
-  "/assets/imagesPodcast/FEV2025-byAIDIAX-83.jpg",
-  "/assets/imagesPodcast/Sem_titulo.png",
+  "/assets/carrossel_papo/1.jpg",
+  "/assets/carrossel_papo/2.jpg",
+  "/assets/carrossel_papo/3.jpg",
+  "/assets/carrossel_papo/4.jpg",
+  "/assets/carrossel_papo/5.jpg",
+  "/assets/carrossel_papo/6.jpg",
+  "/assets/carrossel_papo/7.png",
+  "/assets/carrossel_papo/8.png",
+  "/assets/carrossel_papo/9.png",
+  "/assets/carrossel_papo/10.png",
 ];
 const Podcast: React.FC = () => {
   return (
@@ -29,21 +34,19 @@ const Podcast: React.FC = () => {
           />
         </div>
         <div className="flex flex-col">
-          <div className="flex flex-col font-light gap-8 max-lg:gap-5 text-d-s max-xl:text-m-s ">
+          <div className="flex flex-col gap-8 font-light max-lg:gap-5 text-d-s max-xl:text-m-s ">
             <p>
-              O <strong>Papo de Malungo</strong> é um <strong> podcast </strong>{" "}
-              que fortalece as vozes quilombolas, abordando temas como
-              identidade, território, cultura e resistência. Produzido por{" "}
-              <strong> Thatiele Monic Estêvão e Julius Keniata Nokomo </strong>,
-              integra as ações da Associação Quilombola Vila Santa Efigênia e
-              Adjacências. Cada episódio é um espaço de troca, memória e
-              valorização das histórias e saberes das comunidades quilombolas.
+              O <strong>Papo de Malungo</strong> é um podcast que fortalece as vozes quilombolas, abordando temas como identidade, território, cultura e educação. Trata-se de uma iniciativa de
+              <strong> Thatiele Monic Estêvão </strong>,
+              apresentado por ela e por<strong> Julius Keniata Nokomo</strong>, do Buieié, que integra as ações da Associação Quilombola Vila Santa Efigênia e Adjacências.  Cada episódio constitui um espaço de troca, memória e valorização das histórias e saberes das comunidades quilombolas.
               <br />
-              <strong>Ouça!</strong>
+            </p>
+            <p>
+              <strong >Ouça!</strong>
             </p>
           </div>
 
-          <div className="flex max-lg:flex-col pt-10 gap-6">
+          <div className="flex max-lg:flex-col pt-6 gap-6">
             <div className="flex flex-row items-center gap-2">
               <div className="w-[60px] h-[41px] relative">
                 <Image src="/assets/youtube.png" alt="Carrefour" fill/>
