@@ -4,7 +4,7 @@ export default function ChurchIcon() {
   return (
     <div className="relative w-[30vw] h-[30vw] min-w-[300px] min-h-[300px]">
       <Image
-        src="/assets/church.svg"
+        src="/assets/icons/about_us/church.svg"
         fill
         alt="Igreja"
         className="object-contain mt-[10%]"

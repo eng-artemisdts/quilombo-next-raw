@@ -27,7 +27,7 @@ const Footer: React.FC<FooterProps> = () => {
           <div className="flex flex-col items-center">
             <span className="text-sm">Feito por:</span>
             <Image
-              src="/assets/logo-artemis.svg"
+              src="/assets/icons/artemis/logo-artemis.svg"
               alt="logo Artemis"
               width={100}
               height={100}

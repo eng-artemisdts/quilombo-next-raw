@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import ArquivoLogo from "@public/assets/images/logo-arquivo.png";
+import ArquivoLogo from "@public/assets/icons/arquivo/logo-arquivo.png";
 import { AnimatedHeading } from "./components/AnimatedHeading";
 import { NavigateButton } from "./components/NavigateButton";
 
@@ -29,7 +29,7 @@ const AccessArchive: React.FC = () => {
         lg:[background-position:0_10%]
       "
       style={{
-        backgroundImage: "url('/assets/images/bg-arquivo.png')",
+        backgroundImage: "url('/assets/images/images_arquivo/bg-arquivo.png')",
       }}
     >
       <div className="flex sm:flex-col flex-col-reverse">

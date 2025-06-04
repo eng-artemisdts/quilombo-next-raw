@@ -36,15 +36,15 @@ const Projects: React.FC = () => {
         {/* Cards grid */}
         <div className="mt-12 grid gap-8 lg:grid-cols-2 xl:grid-cols-3">
           <Card
-            image="/assets/images/DSCF4283.jpg"
+            image="/assets/images/images_projects/carrefour.jpeg"
             title="Projeto Carrefour"
             description="Projeto que visa articular os direitos de povos quilombolas e valorizar as memórias e saberes tradicionais nas comunidades."
             buttonText="SAIBA MAIS"
             handleClick={carrefourProject}
-          />
+            />
 
           <Card
-            image="/assets/images/carrefour.jpeg"
+            image="/assets/images/images_projects/DSCF4283.jpg"
             title="Projeto Nicolinas"
             description="Projeto voltado à capacitação em percussão, penteados africanos, turbantes e dança, enriquecendo a expressão cultural do grupo Nicolinas."
             buttonText="SAIBA MAIS"
@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
           />
 
           <Card
-            image="/assets/images/paa.jpeg"
+            image="/assets/images/images_projects/paa.jpeg"
             title="PAA Quilombola"
             description="O Programa de Aquisição de Alimentos tem como finalidades promover o acesso à alimentação e incentivar a agricultura familiar."
             buttonText="SAIBA MAIS"

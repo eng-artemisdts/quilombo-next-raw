@@ -35,14 +35,14 @@ export default function ArquivoPage() {
         </div>
         
             <div className="w-full md:w-[440px] h-[1070px] relative">
-              <Image src="/assets/escudo-folha.png" alt="Carrefour" fill 
+              <Image src="/assets/icons/project_paa/escudo-folha.png" alt="Carrefour" fill 
               className="object-contain"/>
             </div>
             
       </div>
 
       <div className="w-full h-[307px]  relative">
-        <Image src="/assets/images/DSCN0335.jpg" alt="Carrefour" fill 
+        <Image src="/assets/images/images_projects/paa/DSCN0335.jpg" alt="Carrefour" fill 
               className="object-cover object-[100%_50%] rounded-2xl"/>
       </div>
 
@@ -51,7 +51,7 @@ export default function ArquivoPage() {
         <div className="flex flex-col pb-10">
 
           <div className="w-full md:w-[477px] md:h-[600px] max-lg:hidden relative">
-            <Image src="/assets/icons/folha.svg" alt="passaro" fill 
+            <Image src="/assets/icons/project_paa/sementes.svg" alt="passaro" fill 
             className="object-contain object-[40%_100%] rounded-2xl"/>
           </div>
           
