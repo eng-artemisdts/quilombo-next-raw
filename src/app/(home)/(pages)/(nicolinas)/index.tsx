@@ -1,18 +1,21 @@
 import React from "react";
 import Carousel from "@/components/Carousel";
 const images = [
-  "/assets/imagesNicolinas/P1015887-2.jpg",
-  "/assets/imagesNicolinas/DSCF4283.jpg",
-  "/assets/imagesNicolinas/DSCF4434.jpg",
-  "/assets/imagesNicolinas/P1016074.jpg",
-  "/assets/imagesNicolinas/P1204441.jpg",
-  "/assets/imagesNicolinas/P1204673.jpg",
-  "/assets/imagesNicolinas/SETEMBRO-17.jpg",
+  "/assets/images/carrossel_nicolinas/1.png",
+  "/assets/images/carrossel_nicolinas/2.png",
+  "/assets/images/carrossel_nicolinas/3.png",
+  "/assets/images/carrossel_nicolinas/4.png",
+  "/assets/images/carrossel_nicolinas/5.png",
+  "/assets/images/carrossel_nicolinas/6.png",
+  "/assets/images/carrossel_nicolinas/7.png",
+  "/assets/images/carrossel_nicolinas/8.png",
+  "/assets/images/carrossel_nicolinas/9.png",
+  "/assets/images/carrossel_nicolinas/10.png",
 ];
 const Nicolinas: React.FC = () => {
   return (
     <div
-      className="relative flex flex-col px-10 py-30 items-center justify-center gap-7 bg-[url('/assets/grade-vila1.svg')] bg-cover bg-center"
+      className="relative flex flex-col px-10 py-30 items-center justify-center gap-7 bg-[url('/assets/icons/nicolinas/grade-vila1.svg')] bg-cover bg-center"
       id="nicolinas"
     >
       <div className="absolute inset-0 bg-green-500/86" />
@@ -35,7 +38,7 @@ const Nicolinas: React.FC = () => {
               <a
                 type="button"
                 className="flex justify-center text-white bg-yellow-500 w-full font-semibold rounded-full py-2 px-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"
-                href="https://drive.google.com/file/d/1Fjf3bSZS4wvBAbQHq9iIUzmXNmvBCCxQ/view?usp=sharing "
+                href="https://drive.google.com/drive/folders/1WMI1Kg8tPWDFsga7Z1WlGAn3gCD6jj2m?usp=sharing "
                 target="_blank"
                 rel="noopener"
               >

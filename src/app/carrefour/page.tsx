@@ -47,7 +47,7 @@ export default function ArquivoPage() {
         <div className="flex flex-col gap-20 justify-between items-center">
           <div>
             <div className="w-full md:w-[477px] h-[759px]  relative">
-              <Image src="/assets/images/MAI2025_byAIDIAX-97.jpg" alt="Carrefour" fill 
+              <Image src="/assets/images/images_projects/carrefour/MAI2025_byAIDIAX-97.jpg" alt="Carrefour" fill 
               className="object-cover object-[40%_100%] rounded-2xl"/>
             </div>
             <p className="text-blue-500 text-d-s max-lg:text-m-s w-full md:w-[500px] pt-12 ">
@@ -62,7 +62,7 @@ export default function ArquivoPage() {
           </div>
           <div className="flex flex-col items-center">
             <div className="w-full max-sm:w-[477px] sm:w-[477px] max-sm:h-[150px] sm:h-[150px] relative">
-              <Image src="/assets/carrefour.png" alt="Carrefour" fill 
+              <Image src="/assets/images/images_projects/carrefour/carrefour.png" alt="Carrefour" fill 
               className="object-contain "/>
             </div>
             <p className="text-blue-500 max-lg:text-center text-d-s max-lg:text-m-s max-lg:px-10 font-light">
@@ -75,7 +75,7 @@ export default function ArquivoPage() {
       </div>
 
       <div className="w-full h-[307px]  relative">
-        <Image src="/assets/images/MAR2025-64.jpg" alt="Carrefour" fill 
+        <Image src="/assets/images/images_projects/carrefour/MAR2025-64.jpg" alt="Carrefour" fill 
               className="object-cover object-[100%_45%] rounded-2xl"/>
       </div>
 
@@ -84,12 +84,12 @@ export default function ArquivoPage() {
         <div className="flex flex-col gap-70 pt-30">
 
           <div className="w-full md:w-[477px] h-[559px]  relative">
-            <Image src="/assets/images/DSCF3747.jpg" alt="Carrefour" fill 
+            <Image src="/assets/images/images_projects/carrefour/DSCF3747.jpg" alt="Carrefour" fill 
             className="object-cover object-[20%_100%] rounded-2xl"/>
           </div>
           
           <div className="w-full md:w-[477px] h-[559px]  relative">
-            <Image src="/assets/images/JAN2025-9.jpg" alt="Carrefour" fill 
+            <Image src="/assets/images/images_projects/carrefour/JAN2025-9.jpg" alt="Carrefour" fill 
             className="object-cover object-[20%_100%] rounded-2xl"/>
           </div>
             
@@ -156,7 +156,7 @@ export default function ArquivoPage() {
       </div>
 
       <div className="w-full h-[507px] relative">
-        <Image src="/assets/images/MAI2025_byAIDIAX-16.jpg" alt="Carrefour" fill 
+        <Image src="/assets/images/images_projects/carrefour/MAI2025_byAIDIAX-16.jpg" alt="Carrefour" fill 
               className="object-cover object-[100%_45%] rounded-2xl"/>
       </div>
 
@@ -203,7 +203,7 @@ export default function ArquivoPage() {
         <div className="flex flex-col gap-20 justify-end">
           
           <div className="w-full max-sm:w-[477px] sm:w-[477px] max-sm:h-[559px] sm:h-[559px]  relative">
-            <Image src="/assets/images/MAI2025_byAIDIAX-9.jpg" alt="Carrefour" fill 
+            <Image src="/assets/images/images_projects/carrefour/MAI2025_byAIDIAX-9.jpg" alt="Carrefour" fill 
             className="object-cover object-[50%_100%] rounded-2xl"/>
           </div>
             

@@ -3,16 +3,16 @@ import Image from "next/image";
 import React from "react";
 
 const images = [
-  "/assets/carrossel_papo/1.jpg",
-  "/assets/carrossel_papo/2.jpg",
-  "/assets/carrossel_papo/3.jpg",
-  "/assets/carrossel_papo/4.jpg",
-  "/assets/carrossel_papo/5.jpg",
-  "/assets/carrossel_papo/6.jpg",
-  "/assets/carrossel_papo/7.png",
-  "/assets/carrossel_papo/8.png",
-  "/assets/carrossel_papo/9.png",
-  "/assets/carrossel_papo/10.png",
+  "/assets/images/carrossel_papo_de_malungo/1.png",
+  "/assets/images/carrossel_papo_de_malungo/2.png",
+  "/assets/images/carrossel_papo_de_malungo/3.png",
+  "/assets/images/carrossel_papo_de_malungo/4.png",
+  "/assets/images/carrossel_papo_de_malungo/5.png",
+  "/assets/images/carrossel_papo_de_malungo/6.png",
+  "/assets/images/carrossel_papo_de_malungo/7.png",
+  "/assets/images/carrossel_papo_de_malungo/8.png",
+  "/assets/images/carrossel_papo_de_malungo/9.png",
+  "/assets/images/carrossel_papo_de_malungo/10.png",
 ];
 const Podcast: React.FC = () => {
   return (
@@ -27,7 +27,7 @@ const Podcast: React.FC = () => {
       <div className="relative z-10 flex flex-col w-full items-start max-md:items-center justify-center text-white gap-10 lg:w-lg">
         <div className="text-d-xl max-xl:text-m-xl font-bold">
           <Image
-            src="/assets/logo-papo-de-malungo.svg"
+            src="/assets/icons/papo_de_malungo/logo-papo-de-malungo.svg"
             alt="Papo de Malungo"
             width={251}
             height={110}
@@ -49,7 +49,7 @@ const Podcast: React.FC = () => {
           <div className="flex max-lg:flex-col pt-6 gap-6">
             <div className="flex flex-row items-center gap-2">
               <div className="w-[60px] h-[41px] relative">
-                <Image src="/assets/youtube.png" alt="Carrefour" fill/>
+                <Image src="/assets/icons/papo_de_malungo/youtube.png" alt="Carrefour" fill/>
               </div>
               <a
                 type="button"
@@ -64,7 +64,7 @@ const Podcast: React.FC = () => {
 
             <div className="flex flex-row items-center gap-2">
               <div className="w-[50px] h-[50px] relative">
-                <Image src="/assets/spotify.png" alt="Carrefour" fill/>
+                <Image src="/assets/icons/papo_de_malungo/spotify.png" alt="Carrefour" fill/>
               </div>
               <a
                 type="button"

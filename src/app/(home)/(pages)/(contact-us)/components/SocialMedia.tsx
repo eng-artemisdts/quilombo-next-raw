@@ -10,7 +10,7 @@ const SocialMedia: React.FC = () => {
         rel="noopener"
       >
         <Image
-          src="/assets/icons/whatsapp.svg"
+          src="/assets/icons/contact_us/whatsapp.svg"
           alt="Whatsapp"
           width={65}
           height={65}
@@ -23,7 +23,7 @@ const SocialMedia: React.FC = () => {
         rel="noopener"
       >
         <Image
-          src="/assets/icons/facebook.svg"
+          src="/assets/icons/contact_us/facebook.svg"
           alt="Facebook"
           width={65}
           height={65}
@@ -35,7 +35,7 @@ const SocialMedia: React.FC = () => {
         rel="noopener"
       >
         <Image
-          src="/assets/icons/instagram.svg"
+          src="/assets/icons/contact_us/instagram.svg"
           alt="Instagram"
           width={65}
           height={65}
@@ -47,7 +47,7 @@ const SocialMedia: React.FC = () => {
         rel="noopener"
       >
         <Image
-          src="/assets/icons/youtube.svg"
+          src="/assets/icons/contact_us/youtube.svg"
           alt="Youtube"
           width={65}
           height={65}
@@ -59,7 +59,7 @@ const SocialMedia: React.FC = () => {
         rel="noopener"
       >
         <Image
-          src="/assets/icons/spotify.svg"
+          src="/assets/icons/contact_us/spotify.svg"
           alt="Spotify"
           width={65}
           height={65}

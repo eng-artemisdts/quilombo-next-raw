@@ -36,7 +36,7 @@ export default function ArquivoPage() {
             </div>
           </div>
           <div className="w-full md:w-[477px] h-[759px] mt-45 relative">
-            <Image src="/assets/images/P1204673.jpg" alt="Carrefour" fill 
+            <Image src="/assets/images/images_projects/nicolinas/pagina_nicolinas_1.jpg" alt="Carrefour" fill 
             className="object-cover object-[45%_100%] rounded-2xl"/>
           </div>
               
@@ -47,7 +47,7 @@ export default function ArquivoPage() {
           
           <div className="flex flex-col justify-end max-lg:pt-0">
           <div className="max-sm:w-[477px] sm:w-[477px] max-sm:h-[759px] sm:h-[759px] relative">
-              <Image src="/assets/images/DSCF4283.jpg" alt="Carrefour" fill 
+              <Image src="/assets/images/images_projects/nicolinas/página_nicolinas_2.jpg" alt="Carrefour" fill 
               className="object-cover object-[45%_100%] rounded-2xl"/>
             </div>
 
@@ -85,7 +85,7 @@ export default function ArquivoPage() {
               <a
                 type="button"
                 className="flex justify-center text-white bg-green-500 w-full font-semibold rounded-full py-2 px-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"
-                href="https://drive.google.com/file/d/1Fjf3bSZS4wvBAbQHq9iIUzmXNmvBCCxQ/view?usp=sharing "
+                href="https://drive.google.com/drive/folders/1WMI1Kg8tPWDFsga7Z1WlGAn3gCD6jj2m?usp=sharing"
                 target="_blank"
                 rel="noopener"
               >

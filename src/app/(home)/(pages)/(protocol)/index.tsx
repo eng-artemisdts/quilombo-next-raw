@@ -39,7 +39,7 @@ const Protocol = () => {
             <a
               type="button"
               className="flex justify-center text-white bg-red-500 w-[150px] font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300"
-              href="https://drive.google.com/file/d/1gkim2SFCudPFKApt_-pCbbIUzrsO1w8S/view?usp=drive_link"
+              href="https://drive.google.com/drive/folders/128JX1PaiSepwtzH5O8MZsZLOTQJcQOk0?usp=sharing"
               target="_blank"
               rel="noopener"
             >
