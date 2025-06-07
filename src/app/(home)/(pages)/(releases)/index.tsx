@@ -4,7 +4,7 @@ const Releases: React.FC = () => {
   return (
     <div
       className="relative flex flex-col px-10 py-30 items-center justify-center gap-7 bg-[url('/assets/images/releases/MAB-2.jpg')] bg-cover bg-center"
-      id="nicolinas"
+      id=""
     >
       <div className="absolute inset-0 bg-black/70" />
 
@@ -20,7 +20,7 @@ const Releases: React.FC = () => {
           </div>
           <div className="flex flex-col text-justify font-light gap-8 max-lg:gap-5 text-d-s max-xl:text-m-s ">
             <p>
-              As comunidades quilombolas de <strong>Vila Santa Efigênia, Engenho Queimado, Embaúbas e Crasto</strong>, situadas nos distritos de Furquim e Cachoeira do Brumado, em Mariana (MG), foram profundamente afetadas pelo rompimento da barragem de Fundão em 2015. Diante dos impactos ambientais e culturais sofridos, essas comunidades buscaram justiça internacionalmente. 
+              As comunidades quilombolas de <strong>Vila Santa Efigênia, Engenho Queimado, Embaúbas e Crasto</strong>, situadas nos distritos de Furquim e Cachoeira do Brumado, em Mariana (MG), foram profundamente afetadas pelo rompimento da barragem de Fundão em 2015. Diante dos impactos ambientais, sociais e culturais sofridos, essas comunidades buscaram justiça internacionalmente. 
             </p>
             <p>
               Em abril de 2024, a <strong>Associação Quilombola Vila Santa Efigênia e Adjacências</strong> denunciou casos de <strong>racismo ambiental</strong> e violações de direitos humanos à Comissão Interamericana de Direitos Humanos (CIDH). Além disso, representantes dessas comunidades participaram de audiências em Londres, expondo as consequências do desastre e reivindicando reparações adequadas.

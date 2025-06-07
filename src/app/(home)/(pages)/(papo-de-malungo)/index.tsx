@@ -27,7 +27,7 @@ const Podcast: React.FC = () => {
       <div className="relative z-10 flex flex-col w-full items-start max-md:items-center justify-center text-white gap-10 lg:w-lg">
         <div className="text-d-xl max-xl:text-m-xl font-bold">
           <Image
-            src="/assets/icons/papo_de_malungo/logo-papo-de-malungo.svg"
+            src="/assets/icons/papo_de_malungo/logo-papo-de-malungo.png"
             alt="Papo de Malungo"
             width={251}
             height={110}

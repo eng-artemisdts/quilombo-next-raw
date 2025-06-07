@@ -34,29 +34,29 @@ export default function ArquivoPage() {
           </ul>
         </div>
         
-            <div className="w-full md:w-[440px] h-[1070px] relative">
-              <Image src="/assets/icons/project_paa/escudo-folha.png" alt="Carrefour" fill 
-              className="object-contain"/>
-            </div>
+             <div className="w-full md:w-[477px] h-[759px] mt-45 relative">
+                <Image src="/assets/images/images_projects/paa/PAA_byAIDIAX-6067.jpg" alt="Carrefour" fill 
+                className="object-cover object-[45%_100%] rounded-2xl"/>
+              </div>
             
       </div>
 
       <div className="w-full h-[307px]  relative">
-        <Image src="/assets/images/images_projects/paa/DSCN0335.jpg" alt="Carrefour" fill 
-              className="object-cover object-[100%_50%] rounded-2xl"/>
+        <Image src="/assets/images/images_projects/paa/PAA_byAIDIAX-6081.jpg" alt="Carrefour" fill 
+              className="object-cover object-[100%_30%] rounded-2xl"/>
       </div>
 
       <div className="flex flex-col lg:flex-row max-lg:items-center gap-8 items-end">
         
-        <div className="flex flex-col pb-10">
+        <div className="flex flex-col gap-5 ">
 
-          <div className="w-full md:w-[477px] md:h-[600px] max-lg:hidden relative">
-            <Image src="/assets/icons/project_paa/sementes.svg" alt="passaro" fill 
-            className="object-contain object-[40%_100%] rounded-2xl"/>
-          </div>
-          
+          <div className="w-full md:w-[477px] h-[759px] mt-45 relative">
+                <Image src="/assets/images/images_projects/paa/PAA_byAIDIAX-6086.jpg" alt="Carrefour" fill 
+                className="object-cover object-[45%_100%] rounded-2xl"/>
+              </div>
             
          
+          <p className="text-green-500">Imagens: Lucas Aidiax</p>
         </div>
         <div className="border-2 border-green-500 rounded-2xl md:w-2/3 w-full p-8 text-green-500">
          

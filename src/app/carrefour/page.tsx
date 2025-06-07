@@ -200,13 +200,14 @@ export default function ArquivoPage() {
 
         </div>
 
-        <div className="flex flex-col gap-20 justify-end">
+        <div className="flex flex-col gap-5 justify-end">
           
           <div className="w-full max-sm:w-[477px] sm:w-[477px] max-sm:h-[559px] sm:h-[559px]  relative">
             <Image src="/assets/images/images_projects/carrefour/MAI2025_byAIDIAX-9.jpg" alt="Carrefour" fill 
             className="object-cover object-[50%_100%] rounded-2xl"/>
           </div>
             
+           <p className="text-blue-500">Imagens: Lucas Aidiax</p>
         </div>
 
       </div>

@@ -45,12 +45,13 @@ export default function ArquivoPage() {
 
         <div className="flex flex-col lg:flex-row max-lg:items-center gap-8">
           
-          <div className="flex flex-col justify-end max-lg:pt-0">
-          <div className="max-sm:w-[477px] sm:w-[477px] max-sm:h-[759px] sm:h-[759px] relative">
+          <div className="flex flex-col gap-5 justify-end max-lg:pt-0">
+            <div className="max-sm:w-[477px] sm:w-[477px] max-sm:h-[759px] sm:h-[759px] relative">
               <Image src="/assets/images/images_projects/nicolinas/página_nicolinas_2.jpg" alt="Carrefour" fill 
               className="object-cover object-[45%_100%] rounded-2xl"/>
             </div>
-
+            
+            <p className="text-green-500"> Imagens: Alexia Deusdeth </p>
           </div>
           <div className="border-2 border-green-500 rounded-2xl md:w-2/3 w-full p-8 text-green-500">
           
