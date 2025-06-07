@@ -12,7 +12,7 @@ const Footer: React.FC<FooterProps> = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-col space-y-1 text-center md:text-left">
             <span className="text-sm">
-              <strong>Whatsapp:</strong> +55 31 9647-1104
+              <strong>Whatsapp:</strong> +55 31 99647-1104
             </span>
             <span className="text-sm">
               <strong>E-mail:</strong> associacaoquilombola.jsm@gmail.com
@@ -24,20 +24,14 @@ const Footer: React.FC<FooterProps> = () => {
           </div>
 
           {/* Feito por */}
-          <div className="flex flex-col items-center">
-            <span className="text-sm">Feito por:</span>
-            <Image
-              src="/assets/icons/artemis/logo-artemis.svg"
-              alt="logo Artemis"
+          <div className="flex flex-col items-center"> <span className="text-sm">Feito por:</span> <Image src="/assets/icons/artemis/logo-artemis.svg" alt="logo Artemis"
               width={100}
               height={100}
               className="mt-2"
             />
           </div>
-        </div>
-
-        {/* Direitos reservados */}
-        <div className="mt-6 border-t pt-4">
+        </div> {/* Direitos reservados */}
+         <div className="mt-6 border-t pt-4">
           <span className="block text-center text-sm">
             © Todos direitos reservados à Associação Quilombola Vila Santa
             Efigênia e Adjacências.
