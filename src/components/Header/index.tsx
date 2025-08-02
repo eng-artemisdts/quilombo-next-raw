@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import NavLink from "./NavLink";
 import { HiMenu, HiX } from "react-icons/hi";
 import Logo from "@public/assets/logo.svg";
@@ -28,8 +28,11 @@ const defaultNavItems: NavItem[] = [
   { label: "Contato", href: "#contact" },
 ];
 
+const secondaryNavItems: NavItem[] = [{ label: "Voltar ao Início", href: "/" }];
+
 const Header: React.FC<HeaderProps> = ({ isAdminContext = false }) => {
   const router = useRouter();
+  const pathname = usePathname();
   const [authChecked, setAuthChecked] = useState(false);
   const [isUserAdmin, setIsUserAdmin] = useState(false);
 
@@ -37,6 +40,9 @@ const Header: React.FC<HeaderProps> = ({ isAdminContext = false }) => {
   const [active, setActive] = useState<string>(defaultNavItems[0].label);
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Verifica se está na página principal
+  const isMainPage = pathname === "/";
 
   useEffect(() => {
     (async () => {
@@ -66,11 +72,16 @@ const Header: React.FC<HeaderProps> = ({ isAdminContext = false }) => {
       }
       setNavItems(items);
       setActive(items[0].label);
+    } else if (!isMainPage) {
+      // Se não está na página principal, mostra menu secundário
+      setNavItems(secondaryNavItems);
+      setActive(secondaryNavItems[0].label);
     } else {
+      // Se está na página principal, mostra menu padrão
       setNavItems(defaultNavItems);
       setActive(defaultNavItems[0].label);
     }
-  }, [authChecked, isUserAdmin, isAdminContext]);
+  }, [authChecked, isUserAdmin, isAdminContext, isMainPage]);
 
   if (isAdminContext && !authChecked) {
     return null;
@@ -78,7 +89,7 @@ const Header: React.FC<HeaderProps> = ({ isAdminContext = false }) => {
 
   function handleClick(item: NavItem) {
     setActive(item.label);
-    if (isAdminContext) {
+    if (isAdminContext || !isMainPage) {
       router.push(item.href);
     } else {
       scrollToSection(item.href);

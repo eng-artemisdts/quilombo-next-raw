@@ -33,36 +33,38 @@ const ResearchItem: React.FC<ResearchItemProps> = ({
   const thumbnailInst = thumbnailPlugin();
 
   return (
-    <a
-      href={linkUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block hover:opacity-80 transition-opacity"
-    >
-      <div className="flex flex-col gap-y-6 max-w-[320px]">
-        {isPdf ? (
-          <div style={{ width: 300, height: 325 }}>
-            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
-              <Viewer fileUrl={pdfFileUrl} plugins={[thumbnailInst]} />
-            </Worker>
-          </div>
-        ) : (
-          <Image
-            src={imageUrl}
-            alt={title}
-            width={319}
-            height={381}
-            className="object-cover rounded"
-          />
-        )}
+    <div className="flex flex-col gap-y-6 max-w-[320px]">
+      {isPdf ? (
+        <div style={{ width: 300, height: 325 }}>
+          <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
+            <Viewer fileUrl={pdfFileUrl} plugins={[thumbnailInst]} />
+          </Worker>
+        </div>
+      ) : (
+        <Image
+          src={imageUrl}
+          alt={title}
+          width={319}
+          height={381}
+          className="object-cover rounded"
+        />
+      )}
 
-        <h1 className="font-bold text-m-m text-green-500">{title}</h1>
-        <p className="text-m-s text-green-500">{description}</p>
-        <p className="text-m-s text-green-500">
-          <strong>{author}</strong>
-        </p>
+      <div className="hover:opacity-80 transition-opacity">
+        <a
+          href={linkUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+        >
+          <h1 className="font-bold text-m-m text-green-500">{title}</h1>
+          <p className="text-m-s text-green-500">{description}</p>
+          <p className="text-m-s text-green-500">
+            <strong>{author}</strong>
+          </p>
+        </a>
       </div>
-    </a>
+    </div>
   );
 };
 

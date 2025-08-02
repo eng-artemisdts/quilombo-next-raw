@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={poppins.variable}>
+    <html className={`${poppins.variable} overflow-x-hidden`}>
       <head>
         <title>Associacao Quilombolas Vila Santa Efigenia</title>
         <meta
@@ -24,7 +24,7 @@ export default function RootLayout({
         />
         <link rel="icon" href="/assets/favicon.ico" />
       </head>
-      <body className={poppins.className}>
+      <body className={`${poppins.className} overflow-x-hidden`}>
         <AppHeader />
         <Toaster position="top-right" />
         {children}

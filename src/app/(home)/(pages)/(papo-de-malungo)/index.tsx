@@ -17,7 +17,7 @@ const images = [
 const Podcast: React.FC = () => {
   return (
     <div
-      className="relative min-h-screen flex flex-row max-lg:flex-col-reverse px-10 xl:px-10 py-30 items-center justify-center gap-7 max-lg:gap-20 bg-black "
+      className="relative min-h-screen flex flex-row max-lg:flex-col-reverse px-4 sm:px-10 xl:px-10 py-16 lg:py-30 items-center justify-center gap-7 max-lg:gap-20 bg-black overflow-hidden"
       id="podcast"
     >
       <div className="absolute inset-0 "></div>
@@ -36,20 +36,29 @@ const Podcast: React.FC = () => {
         <div className="flex flex-col">
           <div className="flex flex-col gap-8 font-light max-lg:gap-5 text-d-s max-xl:text-m-s ">
             <p>
-              O <strong>Papo de Malungo</strong> é um podcast que fortalece as vozes quilombolas, abordando temas como identidade, território, cultura e educação. Trata-se de uma iniciativa de
-              <strong> Thatiele Monic Estêvão </strong>,
-              apresentado por ela e por<strong> Julius Keniata Nokomo</strong>, do Buieié, que integra as ações da Associação Quilombola Vila Santa Efigênia e Adjacências.  Cada episódio constitui um espaço de troca, memória e valorização das histórias e saberes das comunidades quilombolas.
+              O <strong>Papo de Malungo</strong> é um podcast que fortalece as
+              vozes quilombolas, abordando temas como identidade, território,
+              cultura e educação. Trata-se de uma iniciativa de
+              <strong> Thatiele Monic Estevão </strong>, apresentado por ela e
+              por<strong> Julius Keniata Nokomo</strong>, do Buieié, que integra
+              as ações da Associação Quilombola Vila Santa Efigênia e
+              Adjacências. Cada episódio constitui um espaço de troca, memória e
+              valorização das histórias e saberes das comunidades quilombolas.
               <br />
             </p>
             <p>
-              <strong >Ouça!</strong>
+              <strong>Ouça!</strong>
             </p>
           </div>
 
           <div className="flex max-lg:flex-col pt-6 gap-6">
             <div className="flex flex-row items-center gap-2">
               <div className="w-[60px] h-[41px] relative">
-                <Image src="/assets/icons/papo_de_malungo/youtube.png" alt="Carrefour" fill/>
+                <Image
+                  src="/assets/icons/papo_de_malungo/youtube.png"
+                  alt="Carrefour"
+                  fill
+                />
               </div>
               <a
                 type="button"
@@ -64,7 +73,11 @@ const Podcast: React.FC = () => {
 
             <div className="flex flex-row items-center gap-2">
               <div className="w-[50px] h-[50px] relative">
-                <Image src="/assets/icons/papo_de_malungo/spotify.png" alt="Carrefour" fill/>
+                <Image
+                  src="/assets/icons/papo_de_malungo/spotify.png"
+                  alt="Carrefour"
+                  fill
+                />
               </div>
               <a
                 type="button"

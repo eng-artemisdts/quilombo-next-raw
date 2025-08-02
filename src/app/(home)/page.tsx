@@ -10,8 +10,8 @@ import Releases from "./(pages)/(releases)";
 
 export default function HomePage() {
   return (
-    <div className="h-full w-full ">
-      <Releases/>
+    <div className="h-full w-full overflow-x-hidden">
+      <Releases />
       <AboutUs />
       <Research />
       <Projects />
