@@ -15,14 +15,12 @@ const images = [
 const Nicolinas: React.FC = () => {
   return (
     <div
-      className="relative flex flex-col px-10 py-30 items-center justify-center gap-7 bg-[url('/assets/icons/nicolinas/grade-vila1.svg')] bg-cover bg-center"
+      className="relative flex flex-col px-4 sm:px-10 py-16 lg:py-30 items-center justify-center gap-7 bg-[url('/assets/icons/nicolinas/grade-vila1.svg')] bg-cover bg-center overflow-hidden"
       id="nicolinas"
     >
       <div className="absolute inset-0 bg-green-500/86" />
       <div className=" 2xl:w-[1440px] w-full relative z-10 flex flex-row justify-items-start ">
-        <div className="max-lg:hidden">
-        
-        </div>
+        <div className="max-lg:hidden"></div>
       </div>
       <div className="z-10 flex gap-7 max-lg:flex-col-reverse max-lg:gap-20 xl:px-10">
         <div className="pt-5">
@@ -34,7 +32,6 @@ const Nicolinas: React.FC = () => {
               Grupo de Dança Nicolinas
             </h1>
             <div className="max-w-[280px]">
-
               <a
                 type="button"
                 className="flex justify-center text-white bg-yellow-500 w-full font-semibold rounded-full py-2 px-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"

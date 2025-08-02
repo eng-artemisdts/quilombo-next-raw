@@ -6,11 +6,15 @@ interface CardProps {
   description: string;
   buttonText: string;
   handleClick?: () => void;
-    
-  
 }
 
-const Card: React.FC<CardProps> = ({image, title, description, buttonText, handleClick }) => {
+const Card: React.FC<CardProps> = ({
+  image,
+  title,
+  description,
+  buttonText,
+  handleClick,
+}) => {
   return (
     <div className="bg-white p-6 flex  gap-2flex flex-col items-center ">
       <div className="max-w-md ">
@@ -22,7 +26,7 @@ const Card: React.FC<CardProps> = ({image, title, description, buttonText, handl
         <div className="flex flex-col max-md:items-center">
           <button
             type="button"
-            className="text-white bg-red-500 font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300 w-[150px]"
+            className="text-white bg-red-500 font-semibold p-2 rounded-full cursor-pointer hover:opacity-80 transition-opacity duration-300 w-full sm:w-[150px]"
             onClick={handleClick}
           >
             {buttonText}

@@ -7,10 +7,10 @@ import SocialMedia from "./components/SocialMedia";
 const ContactUs: React.FC = () => {
   return (
     <section
-      className="min-h-screen bg-red-500 flex justify-center"
+      className="min-h-screen bg-red-500 flex justify-center overflow-hidden"
       id="contact"
     >
-      <div className="flex flex-col-reverse lg:flex-row gap-40 max-lg:gap-20 w-[1280px] justify-center items-center px-10 py-30 lg:py-0">
+      <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-40 w-full max-w-[1280px] justify-center items-center px-4 sm:px-10 py-16 lg:py-0">
         <div className="w-full max-sm:w-fit">
           <h2 className="text-d-xl font-bold tracking-tight text-white">
             Fale Conosco
